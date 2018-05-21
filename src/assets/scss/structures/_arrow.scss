@@ -7,18 +7,21 @@
 
     height: 20px;
     overflow: hidden;
-    width: 70px;
+    width: 80px;
+    // width: 70px;
   }
 
   .st-Arrow_Line_Mask {
     .st-Arrow_Line {
       position: absolute;
       top: 50%;
-      right: 10px;
+      right: 6px;
+      // right: 10px;
 
       display: inline-block;
       height: 1px;
-      width: 55px;
+      width: 64px;
+      // width: 55px;
 
       &.white {
         background-color: #ffffff;
@@ -36,13 +39,17 @@
     .st-Arrow_Triangle_Mask.first {
       .st-Arrow_Triangle_Line.first {
         position: absolute;
-        top: 5px;
-        right: 9px;
+        top: 6px;
+        right: 4px;
+        // top: 5px;
+        // right: 9px;
 
         display: inline-block;
         height: 1px;
-        transform: translate3d(0, 0, 0) rotate(30deg);
-        width: 20px;
+        transform: translate3d(0, 0, 0) rotate(28deg);
+        // transform: translate3d(0, 0, 0) rotate(30deg);
+        width: 17px;
+        // width: 20px;
 
         &.white {
           background-color: #ffffff;
@@ -60,12 +67,13 @@
       .st-Arrow_Triangle_Line.second {
         position: absolute;
         top: 8px;
-        right: 20px;
+        right: 14px;
+        // right: 20px;
 
         display: inline-block;
         height: 1px;
         transform: rotate(90deg);
-        width: 15px;
+        width: 11px;
 
         &.white {
           background-color: #ffffff;
@@ -149,32 +157,39 @@
 
 @keyframes st-Arrow_Triangle_Line_f {
   0% {
-    transform: translate3d(0, 0, 0) rotate(30deg);
+    transform: translate3d(0, 0, 0) rotate(28deg);
   }
   5% {
     opacity: 1;
-    transform: translate3d(0, 0, 0) rotate(30deg);
+    transform: translate3d(0, 0, 0) rotate(28deg);
   }
   20% {
     opacity: 0;
-    transform: translate3d(34.6px, 20px, 0) rotate(30deg);
+    transform: translate3d(34.6px, 18.33px, 0) rotate(28deg);
   }
   30% {
     opacity: 0;
-    transform: translate3d(-34.6px, -20px, 0) rotate(30deg);
+    transform: translate3d(-34.6px, -18.33px, 0) rotate(28deg);
   }
   35% {
     opacity: 1;
-    transform: translate3d(0, 0, 0) rotate(30deg);
+    transform: translate3d(0, 0, 0) rotate(28deg);
   }
   90% {
     opacity: 1;
-    transform: translate3d(0, 0, 0) rotate(30deg);
+    transform: translate3d(0, 0, 0) rotate(28deg);
   }
   100% {
     opacity: 1;
-    transform: translate3d(0, 0, 0) rotate(30deg);
+    transform: translate3d(0, 0, 0) rotate(28deg);
   }
+  // コメント
+  // これは矢印の斜めになっている線のアニメーションです
+  // デザイン通りにすると28度の角度でした
+  // その角度の場合、x軸方向に1動かす場合、y軸方向には0.53動かすことになります
+  // そうなると、x軸方向に 34.6px動かすと、y軸方向には18.33px 動かすものとわかります
+  // transform: translate3d(x, y, z);
+  // 参考：https://keisan.casio.jp/exec/system/1177474036
 }
 
 @keyframes st-Arrow_Triangle_Line_s {
