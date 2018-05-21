@@ -1,0 +1,147 @@
+// http://tobiasahlin.com/spinkit/
+
+.top-Loading_Bg_Wrapper {
+  position: relative;
+  position: fixed;
+  top: 0;
+
+  animation: loading_hidden 2s;
+  animation-delay: 4.8s;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+  z-index: $Z_LOADING_CUBE_BG;
+
+  .top-Loading_Bg_Cube {
+    animation: loading_cube_shrink_bg 0.8s ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    background-color: #ffffff;
+    height: 20vh;
+    width: 10%;
+  }
+
+  .bg-Cube1 {
+    animation-delay: 4s;
+  }
+  .bg-Cube2 {
+    animation-delay: 4.05s;
+  }
+  .bg-Cube3 {
+    animation-delay: 4.1s;
+  }
+  .bg-Cube4 {
+    animation-delay: 4.15s;
+  }
+  .bg-Cube5 {
+    animation-delay: 4.2s;
+  }
+  .bg-Cube6 {
+    animation-delay: 4.25s;
+  }
+  .bg-Cube7 {
+    animation-delay: 4.3s;
+  }
+  .bg-Cube8 {
+    animation-delay: 4.35s;
+  }
+  .bg-Cube9 {
+    animation-delay: 4.4s;
+  }
+  .bg-Cube10 {
+    animation-delay: 4.45s;
+  }
+  .bg-Cube11 {
+    animation-delay: 4.6s;
+  }
+  .bg-Cube12 {
+    animation-delay: 4.65s;
+  }
+  .bg-Cube13 {
+    animation-delay: 4.7s;
+  }
+  .bg-Cube14 {
+    animation-delay: 4.75s;
+  }
+  .bg-Sp_Cube1, .bg-Sp_Cube2, .bg-Sp_Cube3, .bg-Sp_Cube4, .bg-Sp_Cube5, .bg-Sp_Cube6, .bg-Sp_Cube7, .bg-Sp_Cube8, .bg-Sp_Cube9, .bg-Sp_Cube10, .bg-Sp_Cube11, .bg-Sp_Cube12, .bg-Sp_Cube13, .bg-Sp_Cube14 {
+    display: auto;
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .top-Loading_Bg_Wrapper {
+    position: relative;
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    z-index: $Z_LOADING_CUBE_BG;
+
+    .top-Loading_Bg_Cube {
+      background-color: #ffffff;
+      // height: 20vh;
+      height: 12%;
+      width: 20%;
+    }
+    .bg-Cube1, .bg-Cube2, .bg-Cube3, .bg-Cube4, .bg-Cube5, .bg-Cube6, .bg-Cube7, .bg-Cube8, .bg-Cube9, .bg-Cube10, .bg-Cube11, .bg-Cube12, .bg-Cube13, .bg-Cube14 {
+      animation-delay: 0;
+    }
+    .bg-Sp_Cube1 {
+      animation-delay: 4s;
+    }
+    .bg-Sp_Cube2 {
+      animation-delay: 4.05s;
+    }
+    .bg-Sp_Cube3 {
+      animation-delay: 4.1s;
+    }
+    .bg-Sp_Cube4 {
+      animation-delay: 4.15s;
+    }
+    .bg-Sp_Cube5 {
+      animation-delay: 4.2s;
+    }
+    .bg-Sp_Cube6 {
+      animation-delay: 4.25s;
+    }
+    .bg-Sp_Cube7 {
+      animation-delay: 4.3s;
+    }
+    .bg-Sp_Cube8 {
+      animation-delay: 4.35s;
+    }
+    .bg-Sp_Cube9 {
+      animation-delay: 4.4s;
+    }
+    .bg-Sp_Cube10 {
+      animation-delay: 4.45s;
+    }
+    .bg-Sp_Cube11 {
+      animation-delay: 4.6s;
+    }
+    .bg-Sp_Cube12 {
+      animation-delay: 4.65s;
+    }
+    .bg-Sp_Cube13 {
+      animation-delay: 4.7s;
+    }
+    .bg-Sp_Cube14 {
+      animation-delay: 4.75s;
+    }
+  }
+}
+
+@keyframes loading_cube_shrink_bg {
+  0% {
+    transform: scale3D(1, 1, 1);
+  }
+
+  100% {
+    transform: scale3D(0, 0, 1);
+  }
+}

@@ -1,0 +1,70 @@
+.top-Mv_Wrapper {
+  .top-Mv {
+    .top-Mv_Inner {
+      position: relative;
+
+      background: url("../img/top/top-mv_min.jpg")bottom 0 center /cover no-repeat;
+      background-color: #125d75;
+      height: 100vh;
+    }
+  }
+}
+
+.top-Mv_Txt_Wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  color: #ffffff;
+  text-align: center;
+  transform: translate(-50%, -50%);
+
+  .title {
+    font-size: 64px;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+    letter-spacing: 10px;
+  }
+
+  .sub-Title {
+    font-size: 12px;
+    letter-spacing: 1px;
+    letter-spacing: 2px;
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .top-Mv_Wrapper {
+    .top-Mv {
+      .top-Mv_Inner {
+        position: relative;
+
+        background: url("../img/top/top-mv_min.jpg")bottom 0 center /cover no-repeat;
+        height: 100vh;
+      }
+    }
+  }
+
+  .top-Mv_Txt_Wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    color: #ffffff;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+    .title {
+      font-size: 34px;
+      letter-spacing: 8px;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+
+    .sub-Title {
+      font-size: 10px;
+      letter-spacing: 3px;
+      line-height: 2.2;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.st-Page_Top {
+  position: fixed;
+  right: 30px;
+  // right: -5px;
+  bottom: 120px;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.6s;
+  z-index: $Z_PAGE_TOP;
+
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .arrow {
+    position: absolute;
+    top: -73px;
+    right: 6px;
+
+    display: none;
+    transform: rotate(-90deg);
+    width: 60px;
+  }
+
+  .txt {
+    color: #1d2c33;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transform: rotate(90deg);
+  }
+
+  &:hover {
+    .arrow {
+      animation: arrow_hover_vertical 0.8s;
+      animation-fill-mode: both;
+    }
+  }
+
+  &.show {
+    opacity: 1;
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .st-Page_Top {
+    position: fixed;
+    right: -5px;
+    bottom: 45px;
+
+    cursor: pointer;
+
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+
+    .arrow {
+      position: absolute;
+      top: -60px;
+      right: 5px;
+
+      display: inline-block;
+      transform: rotate(-90deg);
+      width: 50px;
+    }
+
+    .txt {
+      color: #1d2c33;
+      font-size: 10px;
+      letter-spacing: 1px;
+      transform: rotate(90deg);
+    }
+
+    &:hover {
+      .arrow {
+        animation: stop 0.8s;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .st-Page_Top {
+    position: fixed;
+    right: 5px;
+    bottom: 60px;
+
+    cursor: pointer;
+
+    a {
+      display: block;
+      height: auto;
+      width: auto;
+    }
+
+    .arrow {
+      position: absolute;
+      top: -48px;
+      right: -6px;
+
+      transform: rotate(-90deg);
+      width: 40px;
+    }
+
+    .txt {
+      position: absolute;
+      right: -10px;
+
+      color: #1d2c33;
+      font-size: 10px;
+      height: 50px;
+      letter-spacing: 1px;
+      transform: rotate(90deg);
+      width: 80px;
+    }
+  }
+}

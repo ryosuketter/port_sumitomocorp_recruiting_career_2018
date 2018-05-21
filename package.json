@@ -1,0 +1,36 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [
+    "gulp",
+    "pug"
+  ],
+  "author": "Ryosuke Shimizu",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^3.1.0",
+    "node-sass": "^4.3.0",
+    "postcss": "^5.2.11",
+    "postcss-cssnext": "^2.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucketのやつ"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "http://domain/"
+}

@@ -1,0 +1,27 @@
+//- _sp_header_nav
+mixin sp_nav(path)
+  .st-Nav_Wrapper_Bg#js-Nav_Bg
+  .st-Nav_Wrapper.js-Nav
+    .st-Nav
+      .st-Nav_Inner
+        ul
+          li
+            a(href=path + '') HOME
+          li
+            a(href=path + 'message/') #{message}
+          li
+            a(href=path + 'person/01.html') #{person} #{suzuki}
+          li
+            a(href=path + 'person/02.html') #{person} #{ebukuro}
+          li
+            a(href=path + 'talk/01.html') #{talk}
+          li
+            a(href=path + 'resident/01.html') #{resident} #{nakamura}
+          li
+            a(href=path + 'resident/02.html') #{resident} #{oomori}
+          li
+            a(href=path + 'career/') #{career}
+          li
+            a(href="https://job.axol.jp/bw/c/sumitomocorp/job/search" target="_blank") #{job_category}一覧
+
+//- _sp_header_nav

@@ -1,0 +1,53 @@
+// height × all -1
+.message-Contents_Img_01 {
+  .message-Fade_In {
+    &.fade-In {
+      animation: fade_in_animation_message_01 0.6s steps(16);
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+.message-Contents_Img_02 {
+  .message-Fade_In {
+    &.fade-In {
+      animation: fade_in_animation_message_02 0.6s steps(16);
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+.fade-In {
+  &.Img01-Message {
+    background: url("../img/message/message-contents_01_01_min_sprite.png") no-repeat;
+    background-size: 960px 9520px;
+    height: 560px;
+    width: 960px;
+  }
+  &.Img02-Message {
+    background: url("../img/message/message-contents_01_02_min_sprite.png") no-repeat;
+    background-size: 960px 9520px;
+    height: 560px;
+    width: 960px;
+    margin-left: auto;
+  }
+}
+
+@keyframes fade_in_animation_message_01 {
+  to { background-position: 0 -8960px; }
+}
+@keyframes fade_in_animation_message_02 {
+  to { background-position: 0 -8960px; }
+}
+// height × 17
+@include max-screen($BREAK_POINT_TABLET) {
+  .fade-In {
+    &.Img01-Message {
+      display: none;
+    }
+    &.Img02-Message {
+      display: none;
+    }
+  }
+}

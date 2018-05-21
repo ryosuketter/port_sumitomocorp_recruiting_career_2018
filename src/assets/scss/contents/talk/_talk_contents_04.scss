@@ -1,0 +1,217 @@
+.talk-Contents_04_Wrapper {
+  .talk-Contents_04 {
+    .talk-Contents_04_Inner {
+      display: flex;
+      margin: 0 auto;
+      max-width: 1440px;
+      padding-top: 120px;
+    }
+  }
+}
+
+.talk-Contents_04_Img_Wrapper {
+  font-size: 0;
+}
+
+.talk-Contents_04_Txt_Wrapper {
+  position: relative;
+  top: 57px;
+  right: 130px;
+
+  background-color: $Light_Blue;
+  height: 100%;
+  max-width: 720px;
+  min-width: 720px;
+
+  .talk-Contents_04_Txt_Inner {
+    color: #ffffff;
+    padding: 75px 80px;
+
+    .title {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 21px;
+    }
+  }
+}
+
+@include max-screen(1440px) {
+  .talk-Contents_04_Wrapper {
+    .talk-Contents_04 {
+      .talk-Contents_04_Inner {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1270px;
+        padding-top: 120px;
+      }
+    }
+  }
+
+  .talk-Contents_04_Img_Wrapper {
+    font-size: 0;
+    width: 50%;
+
+    img {
+      max-width: 840px;
+      width: 100%;
+    }
+  }
+
+  .talk-Contents_04_Txt_Wrapper {
+    position: relative;
+    top: 57px;
+    right: 50px;
+
+    background-color: $Light_Blue;
+    height: 100%;
+    max-width: 620px;
+    min-width: 620px;
+
+    .talk-Contents_04_Txt_Inner {
+      color: #ffffff;
+      padding: 65px 70px;
+
+      .title {
+        font-size: 36px;
+        margin-bottom: 21px;
+      }
+    }
+  }
+}
+
+// @include max-screen(1270px) {
+//   .talk-Contents_04_Wrapper {
+//     .talk-Contents_04 {
+//       .talk-Contents_04_Inner {
+//         display: flex;
+//         margin: 0 auto;
+//         max-width: 1000px;
+//         padding-top: 120px;
+//       }
+//     }
+//   }
+//
+//   .talk-Contents_04_Img_Wrapper {
+//     font-size: 0;
+//
+//     img {
+//       height: 579px;
+//       width: 640px;
+//     }
+//   }
+//
+//   .talk-Contents_04_Txt_Wrapper {
+//     position: relative;
+//     top: 57px;
+//     right: 200px;
+//
+//     background-color: $Light_Blue;
+//     height: 100%;
+//     max-width: 550px;
+//     min-width: 550px;
+//
+//     .talk-Contents_04_Txt_Inner {
+//       color: #ffffff;
+//       padding: 45px 50px;
+//
+//       .title {
+//         font-size: 36px;
+//         margin-bottom: 21px;
+//       }
+//     }
+//   }
+// }
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .talk-Contents_04_Wrapper {
+    .talk-Contents_04 {
+      .talk-Contents_04_Inner {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        padding-top: 60px;
+      }
+    }
+  }
+
+  .talk-Contents_04_Img_Wrapper {
+    font-size: 0;
+    margin-bottom: -60px;
+    text-align: center;
+    width: 70%;
+
+    img {
+      // height: 489px;
+      width: 100%;
+    }
+  }
+
+  .talk-Contents_04_Txt_Wrapper {
+    position: relative;
+    top: auto;
+    right: auto;
+
+    background-color: $Light_Blue;
+    height: 100%;
+    margin-left: auto;
+    max-width: 550px;
+    min-width: 550px;
+
+    .talk-Contents_04_Txt_Inner {
+      color: #ffffff;
+      padding: 45px 50px;
+
+      .title {
+        font-size: 28px;
+        margin-bottom: 21px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .talk-Contents_04_Wrapper {
+    .talk-Contents_04 {
+      .talk-Contents_04_Inner {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        padding-top: 33px;
+      }
+    }
+  }
+
+  .talk-Contents_04_Img_Wrapper {
+    font-size: 0;
+    margin-bottom: -60px;
+    text-align: left;
+    width: 95%;
+
+    img {
+      // height: 289px;
+      width: 100%;
+    }
+  }
+
+  .talk-Contents_04_Txt_Wrapper {
+    position: relative;
+    top: auto;
+    right: auto;
+
+    background-color: $Light_Blue;
+    height: 100%;
+    margin-left: auto;
+    max-width: 95%;
+    min-width: 95%;
+
+    .talk-Contents_04_Txt_Inner {
+      color: #ffffff;
+      padding: 24px;
+
+      .title {
+        font-size: 19px;
+        margin-bottom: 21px;
+      }
+    }
+  }
+}

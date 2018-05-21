@@ -1,0 +1,447 @@
+$st-Mv_Grid_Size: 120px;
+
+.st-Mv_Grid_Wrapper {
+  &.mv-Top {
+    animation: top_mv_grid 1s;
+    animation-delay: 6.9s;
+    animation-fill-mode: both;
+  }
+
+  &.mv-Underlayer {
+    animation: top_mv_grid 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+  }
+}
+
+.st-Mv_Grid {
+  position: absolute;
+
+  background-color: #ffffff;
+  height: $st-Mv_Grid_Size;
+  width: $st-Mv_Grid_Size;
+
+  &.grid1 {
+    top: 0;
+    left: 0;
+
+    opacity: 0.1;
+  }
+  &.grid2 {
+    top: 0;
+    left: 0 + ($st-Mv_Grid_Size * 1);
+
+    opacity: 0.2;
+  }
+  &.grid3 {
+    top: 0;
+    left: 0 + ($st-Mv_Grid_Size * 2);
+
+    opacity: 0.1;
+  }
+  &.grid4 {
+    top: 0;
+    left: 0 + ($st-Mv_Grid_Size * 4);
+
+    opacity: 0.2;
+  }
+  &.grid5 {
+    top: 0 + ($st-Mv_Grid_Size * 1);
+    left: 0 + ($st-Mv_Grid_Size * 1);
+
+    opacity: 0.1;
+  }
+  &.grid6 {
+    top: 0 + ($st-Mv_Grid_Size * 1);
+    left: 0 + ($st-Mv_Grid_Size * 2);
+
+    opacity: 0.2;
+  }
+  &.grid7 {
+    top: 0 + ($st-Mv_Grid_Size * 2);
+    left: 0 + ($st-Mv_Grid_Size * 0);
+
+    opacity: 0.2;
+  }
+  &.grid8 {
+    top: 0 + ($st-Mv_Grid_Size * 2);
+    left: 0 + ($st-Mv_Grid_Size * 2);
+
+    opacity: 0.1;
+  }
+  &.grid9 {
+    top: 0 + ($st-Mv_Grid_Size * 2);
+    left: 0 + ($st-Mv_Grid_Size * 3);
+
+    opacity: 0.2;
+  }
+  &.grid10 {
+    top: 0 + ($st-Mv_Grid_Size * 4);
+    left: 0 + ($st-Mv_Grid_Size * 1);
+
+    opacity: 0.1;
+  }
+  &.grid11 {
+    right: 0 + ($st-Mv_Grid_Size * 1);
+    bottom: 0 + ($st-Mv_Grid_Size * 0);
+
+    opacity: 0.2;
+  }
+  &.grid12 {
+    right: 0 + ($st-Mv_Grid_Size * 2);
+    bottom: 0 + ($st-Mv_Grid_Size * 0);
+
+    opacity: 0.1;
+  }
+  &.grid13 {
+    right: 0 + ($st-Mv_Grid_Size * 4);
+    bottom: 0 + ($st-Mv_Grid_Size * 0);
+
+    opacity: 0.1;
+  }
+  &.grid14 {
+    right: 0 + ($st-Mv_Grid_Size * 0);
+    bottom: 0 + ($st-Mv_Grid_Size * 1);
+
+    opacity: 0.2;
+  }
+  &.grid15 {
+    right: 0 + ($st-Mv_Grid_Size * 1);
+    bottom: 0 + ($st-Mv_Grid_Size * 1);
+
+    opacity: 0.1;
+  }
+  &.grid16 {
+    right: 0 + ($st-Mv_Grid_Size * 2);
+    bottom: 0 + ($st-Mv_Grid_Size * 1);
+
+    opacity: 0.2;
+  }
+  &.grid17 {
+    right: 0 + ($st-Mv_Grid_Size * 1);
+    bottom: 0 + ($st-Mv_Grid_Size * 2);
+
+    opacity: 0.2;
+  }
+  &.grid18 {
+    right: 0 + ($st-Mv_Grid_Size * 3);
+    bottom: 0 + ($st-Mv_Grid_Size * 2);
+
+    opacity: 0.2;
+  }
+  &.grid19 {
+    right: 0 + ($st-Mv_Grid_Size * 0);
+    bottom: 0 + ($st-Mv_Grid_Size * 3);
+
+    opacity: 0.1;
+  }
+  &.grid19 {
+    right: 0 + ($st-Mv_Grid_Size * 2);
+    bottom: 0 + ($st-Mv_Grid_Size * 5);
+
+    opacity: 0.2;
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  $st-Mv_Grid_Size: 70px;
+
+  .st-Mv_Grid_Wrapper {
+    &.mv-Top {
+      animation: top_mv_grid 1s;
+      animation-delay: 6.9s;
+      animation-fill-mode: both;
+    }
+
+    &.mv-Underlayer {
+      animation: top_mv_grid 1s;
+      animation-delay: 2s;
+      animation-fill-mode: both;
+    }
+  }
+
+  .st-Mv_Grid {
+    position: absolute;
+
+    background-color: #ffffff;
+    height: $st-Mv_Grid_Size;
+    width: $st-Mv_Grid_Size;
+
+    &.grid1 {
+      top: 0;
+      left: 0;
+
+      opacity: 0.1;
+    }
+    &.grid2 {
+      top: 0;
+      left: 0 + ($st-Mv_Grid_Size * 1);
+
+      opacity: 0.2;
+    }
+    &.grid3 {
+      top: 0;
+      left: 0 + ($st-Mv_Grid_Size * 2);
+
+      opacity: 0.1;
+    }
+    &.grid4 {
+      top: 0;
+      left: 0 + ($st-Mv_Grid_Size * 4);
+
+      opacity: 0.2;
+    }
+    &.grid5 {
+      top: 0 + ($st-Mv_Grid_Size * 1);
+      left: 0 + ($st-Mv_Grid_Size * 1);
+
+      opacity: 0.1;
+    }
+    &.grid6 {
+      top: 0 + ($st-Mv_Grid_Size * 1);
+      left: 0 + ($st-Mv_Grid_Size * 2);
+
+      opacity: 0.2;
+    }
+    &.grid7 {
+      top: 0 + ($st-Mv_Grid_Size * 2);
+      left: 0 + ($st-Mv_Grid_Size * 0);
+
+      opacity: 0.2;
+    }
+    &.grid8 {
+      top: 0 + ($st-Mv_Grid_Size * 2);
+      left: 0 + ($st-Mv_Grid_Size * 2);
+
+      opacity: 0.1;
+    }
+    &.grid9 {
+      top: 0 + ($st-Mv_Grid_Size * 2);
+      left: 0 + ($st-Mv_Grid_Size * 3);
+
+      opacity: 0.2;
+    }
+    &.grid10 {
+      top: 0 + ($st-Mv_Grid_Size * 4);
+      left: 0 + ($st-Mv_Grid_Size * 1);
+
+      opacity: 0.1;
+    }
+    &.grid11 {
+      right: 0 + ($st-Mv_Grid_Size * 1);
+      bottom: 0 + ($st-Mv_Grid_Size * 0);
+
+      opacity: 0.2;
+    }
+    &.grid12 {
+      right: 0 + ($st-Mv_Grid_Size * 2);
+      bottom: 0 + ($st-Mv_Grid_Size * 0);
+
+      opacity: 0.1;
+    }
+    &.grid13 {
+      right: 0 + ($st-Mv_Grid_Size * 4);
+      bottom: 0 + ($st-Mv_Grid_Size * 0);
+
+      opacity: 0.1;
+    }
+    &.grid14 {
+      right: 0 + ($st-Mv_Grid_Size * 0);
+      bottom: 0 + ($st-Mv_Grid_Size * 1);
+
+      opacity: 0.2;
+    }
+    &.grid15 {
+      right: 0 + ($st-Mv_Grid_Size * 1);
+      bottom: 0 + ($st-Mv_Grid_Size * 1);
+
+      opacity: 0.1;
+    }
+    &.grid16 {
+      right: 0 + ($st-Mv_Grid_Size * 2);
+      bottom: 0 + ($st-Mv_Grid_Size * 1);
+
+      opacity: 0.2;
+    }
+    &.grid17 {
+      right: 0 + ($st-Mv_Grid_Size * 1);
+      bottom: 0 + ($st-Mv_Grid_Size * 2);
+
+      opacity: 0.2;
+    }
+    &.grid18 {
+      right: 0 + ($st-Mv_Grid_Size * 3);
+      bottom: 0 + ($st-Mv_Grid_Size * 2);
+
+      opacity: 0.2;
+    }
+    &.grid19 {
+      right: 0 + ($st-Mv_Grid_Size * 0);
+      bottom: 0 + ($st-Mv_Grid_Size * 3);
+
+      opacity: 0.1;
+    }
+    &.grid19 {
+      right: 0 + ($st-Mv_Grid_Size * 2);
+      bottom: 0 + ($st-Mv_Grid_Size * 5);
+
+      opacity: 0.2;
+    }
+  }
+}
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  $st-Mv_Grid_Size: 50px;
+
+  .st-Mv_Grid_Wrapper {
+    &.mv-Top {
+      animation: top_mv_grid 1s;
+      animation-delay: 6.9s;
+      animation-fill-mode: both;
+    }
+
+    &.mv-Underlayer {
+      animation: top_mv_grid 1s;
+      animation-delay: 2s;
+      animation-fill-mode: both;
+    }
+  }
+
+  .st-Mv_Grid {
+    position: absolute;
+
+    background-color: #ffffff;
+    height: $st-Mv_Grid_Size;
+    width: $st-Mv_Grid_Size;
+
+    &.grid1 {
+      top: 0;
+      left: 0;
+
+      opacity: 0.1;
+    }
+    &.grid2 {
+      top: 0;
+      left: 0 + ($st-Mv_Grid_Size * 1);
+
+      opacity: 0.2;
+    }
+    &.grid3 {
+      top: 0;
+      left: 0 + ($st-Mv_Grid_Size * 2);
+
+      opacity: 0.1;
+    }
+    &.grid4 {
+      top: 0;
+      left: 0 + ($st-Mv_Grid_Size * 4);
+
+      opacity: 0.2;
+    }
+    &.grid5 {
+      top: 0 + ($st-Mv_Grid_Size * 1);
+      left: 0 + ($st-Mv_Grid_Size * 1);
+
+      opacity: 0.1;
+    }
+    &.grid6 {
+      top: 0 + ($st-Mv_Grid_Size * 1);
+      left: 0 + ($st-Mv_Grid_Size * 2);
+
+      opacity: 0.2;
+    }
+    &.grid7 {
+      top: 0 + ($st-Mv_Grid_Size * 2);
+      left: 0 + ($st-Mv_Grid_Size * 0);
+
+      opacity: 0.2;
+    }
+    &.grid8 {
+      top: 0 + ($st-Mv_Grid_Size * 2);
+      left: 0 + ($st-Mv_Grid_Size * 2);
+
+      opacity: 0.1;
+    }
+    &.grid9 {
+      top: 0 + ($st-Mv_Grid_Size * 2);
+      left: 0 + ($st-Mv_Grid_Size * 3);
+
+      opacity: 0.2;
+    }
+    &.grid10 {
+      top: 0 + ($st-Mv_Grid_Size * 4);
+      left: 0 + ($st-Mv_Grid_Size * 1);
+
+      opacity: 0.1;
+    }
+    &.grid11 {
+      right: 0 + ($st-Mv_Grid_Size * 1);
+      bottom: 0 + ($st-Mv_Grid_Size * 0);
+
+      opacity: 0.2;
+    }
+    &.grid12 {
+      right: 0 + ($st-Mv_Grid_Size * 2);
+      bottom: 0 + ($st-Mv_Grid_Size * 0);
+
+      opacity: 0.1;
+    }
+    &.grid13 {
+      right: 0 + ($st-Mv_Grid_Size * 4);
+      bottom: 0 + ($st-Mv_Grid_Size * 0);
+
+      opacity: 0.1;
+    }
+    &.grid14 {
+      right: 0 + ($st-Mv_Grid_Size * 0);
+      bottom: 0 + ($st-Mv_Grid_Size * 1);
+
+      opacity: 0.2;
+    }
+    &.grid15 {
+      right: 0 + ($st-Mv_Grid_Size * 1);
+      bottom: 0 + ($st-Mv_Grid_Size * 1);
+
+      opacity: 0.1;
+    }
+    &.grid16 {
+      right: 0 + ($st-Mv_Grid_Size * 2);
+      bottom: 0 + ($st-Mv_Grid_Size * 1);
+
+      opacity: 0.2;
+    }
+    &.grid17 {
+      right: 0 + ($st-Mv_Grid_Size * 1);
+      bottom: 0 + ($st-Mv_Grid_Size * 2);
+
+      opacity: 0.2;
+    }
+    &.grid18 {
+      right: 0 + ($st-Mv_Grid_Size * 3);
+      bottom: 0 + ($st-Mv_Grid_Size * 2);
+
+      opacity: 0.2;
+    }
+    &.grid19 {
+      right: 0 + ($st-Mv_Grid_Size * 0);
+      bottom: 0 + ($st-Mv_Grid_Size * 3);
+
+      opacity: 0.1;
+    }
+    &.grid19 {
+      right: 0 + ($st-Mv_Grid_Size * 2);
+      bottom: 0 + ($st-Mv_Grid_Size * 5);
+
+      opacity: 0.2;
+    }
+  }
+}
+
+
+@keyframes top_mv_grid {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

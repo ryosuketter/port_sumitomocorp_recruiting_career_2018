@@ -1,0 +1,93 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= `${person}｜住友商事株式会社 | ${suzuki}`;
+  - var pageDescription= "キャリア採用で入社した社員が日々どんなやりがいを持って働いているか紹介します。";
+  - var pageKeywords= `住友商事株式会社,${person},${suzuki}`;
+  //- Optional
+  - var pageOgpTitle= pageTitle;
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "person/01.html";
+  - var classname_mv = "Underlayer";
+
+block content
+  //- contents
+
+  //- MV
+  .person-Mv_Wrapper
+    .person-Mv
+      .person-Mv_Inner.person-01
+        .person-Txt_Inner
+          p.sub-Title.font-Noto.st-Title_Fade_In_01 #{person}
+          h2.title.font-Noto.st-Title_Fade_In_02 理系のバックグラウンドを生かして、<br class="hidden_SP">「効率性の向上」という社会貢献に挑む。
+          p.position.st-Title_Fade_In_03 #{suzuki_position1} #{suzuki_position2}
+          p.name.st-Title_Fade_In_04 #{suzuki}
+    include /_includes/_st_mv_grid
+
+  include /_includes/_bg_cube_grid
+    //- コンテンツ1
+    .person-Contents_01_Wrapper
+      .person-Contents_01
+        .person-Contents_01_Inner
+          .person-Contents_01_Img_Wrapper.js-img_scroll_fade_in
+            img.wow.fadeIn(src='../assets/img/person/01/person-contents_01_min.jpg', alt=`${person} ${suzuki}`, data-wow-delay='0.2s')
+            //- パラパラフェードイン
+            //- .person-Fade_In.Img01-01-Person.js-img_scroll_fade_in
+          .person-Contents_01_Txt_Wrapper.js-img_scroll_fade_in
+            h3.title.font-Noto マンハッタンでの<br class="hidden_SP">出会いをきっかけに、<br class="hidden_SP">理系のキャリアとは<br class="hidden_SP">「正反対」の商社に入社。
+            p.body 私は中学時代をイギリスで過ごしたこともあり、英語でのコミュニケーションに関心が高く、英語教育に力を入れている大学の教養学部に進学しました。また、幼い頃から自動車が好きで、研究職への憧れを抱き物理工学やコンピュータについて学びました。その後、より専門性を極めるため大学院に進み、後期課程時には、教授の推薦もあり半導体物理学を学ぶためドイツに渡りました。
+            p.body 現地では地方都市に滞在したのですが、インドや東欧など世界中から研究者が集まり日本人は私一人だけという環境で、言葉も生活も非常に苦労したのを覚えています。単に人と仲良くなればいいということではなく、言語も文化も異なる中で、研究における共通のタスクをこなしていくために常に一段高いレベルでのコミュニケーションが求められました。こうした経験を通じて、単なる語学力やプレゼンテーションスキルの修得に留まらず、しっかりとロジックを組み立てて「相手に伝わる」コミュニケーションを意識する習慣を身につけることができ、今日のビジネスパーソンとしての土台になっていると思います。
+            p.body このように理系ど真ん中のような研究生活を送ってきたわけですが、偶然マンハッタンで出会った商社マンの「人情味」と「斬新な視点」に惹かれ、それまで考えもしなかった商社パーソンとしての道を歩むべく、縁あってドイツ住商への入社を決意しました。
+
+    //- コンテンツ2
+    .person-Contents_02_Wrapper
+      .person-Contents_02
+        .person-Contents_02_Inner
+          .person-Contents_02_Bg_Img_Wrapper.person-01
+            .person-Contents_02_Txt_Wrapper.js-img_scroll_fade_in
+              h3.title.font-Noto 異なる業界のアイデアを取り込み、<br class="hidden_SP">業界再編のうねりの中に「シナジー」を起こす。
+              p.body ドイツ住商に入社してから自動車関連事業に携わりましたが、客先に近いところでビジネスを経験できる面白味がある反面、現地事務所では得られる情報が限定的で、主体的に戦略を描くことができないと感じ、自分の更なる可能性にチャレンジするため中途採用で住友商事に入ることを決意しました。住友商事の自動車関連事業は非常に歴史のある重厚長大の事業で、強固なビジネス基盤を構築しています。一方で、取り巻くビジネス環境は大きく変化しています。
+              p.body 自動車業界全体を見回してみても、自動車を「売るから使う」という発想にもの凄い勢いで変わりつつあり、おそらく10年、15年後には、今とは全く異なる業界地図が出来上がっていることでしょう。我々も現状に満足せず新しいものを生み出そうという風土の中、単に商品のポートフォリオを組み直すだけではなく、ビジネスモデル自体を大きく変革させようと目下取り組んでいるところです。私はこれを自動車業界における総合商社の役割を大きく変えるチャンスと捉えています。なぜなら、アイデアが世界を変えられる時代であり、そのアイデアは異なる業界とのシナジーによって生み出される可能性が高いからです。こうした局面でこそ、起爆剤、ボンド、潤滑油などに例えられるように、業界を超えてシナジーを生み出すという総合商社の強みが最大限発揮されるのではないかと考えています。
+              p.body 会社というのは、自己実現や社会貢献のためのVehicle（乗り物）という考え方もできますが、会社を大きくすることで、将来的に大きな自己実現や社会貢献ができると私は考えています。
+          .person-Contents_02_Img_Wrapper.js-img_scroll_fade_in
+            //- パラパラフェードイン
+            //- .person-Fade_In.Img02-01-Person.js-img_scroll_fade_in
+            img.wow.fadeIn(src='../assets/img/person/01/person-contents_02_min.jpg', alt=`${person} ${suzuki}`, data-wow-delay='0.2s')
+
+    //- コンテンツ3
+    .person-Contents_03_Wrapper
+      .person-Contents_03
+        .person-Contents_03_Inner
+          .person-Contents_03_Txt_Wrapper.js-img_scroll_fade_in
+            h3.title.font-Noto 新卒入社も中途入社も<br class="hidden_SP">「想い」は同じ。<br class="hidden_SP">本質を見極めるのが<br class="hidden_SP">「住友商事のDNA」。
+            p.body 自動車というのは樹脂、鉄、アルミなど様々な素材から成り立っており、幅広い知識がなければ、自動車の仕組みすら理解することはできません。そうした点では、自身の理系のバックグラウンドはとても役に立っているように思います。また、専門性を身につけるということは本質を見極める訓練でもあります。
+            p.body 住友商事には様々なバックグラウンドを持った人が集まっていますが、新卒入社の社員も中途入社の社員も常に本質を捉えようとする人が多く、また「会社を良くしたい」という共通した想いを持っています。それが住友商事のDNAのような気がします。中途で住友商事に入社することを検討している方にも、是非想いを持って入社してもらえると嬉しいです。それは、単に会社を良くするということだけではありません。例えば、「より便利な社会を築く」というのは単純な言葉ですが、非常に重要なキーワードだと捉えています。「効率性の向上」は、すなわち「社会コストの低下」でもあります。
+            p.body 自動車関連事業に限らず、我々の事業の先にはこうした社会貢献があるのだと私は信じています。私自身も米国での駐在生活が始まり、これから出会うであろう多くの人々とのネットワークを大変楽しみにしているところです。社内外の仲間と共に、様々な経験を通じて、夢の実現に一歩ずつ近づいていきたいですね。
+          .person-Contents_03_Img_Wrapper.js-img_scroll_fade_in
+            //- パラパラフェードイン
+            //- .person-Fade_In.Img03-01-Person.js-img_scroll_fade_in
+            img.wow.fadeIn(src='../assets/img/person/01/person-contents_03_min.jpg', alt=`${person} ${suzuki}`, data-wow-delay='0.2s')
+
+    //- 自己紹介
+    .person-Profile_Wrapper
+      .person-Profile
+        .person-Profile_Inner
+          .person-Profile_Img_Wrapper.wow.fadeInUp(data-wow-delay='0.2s')
+            img(src='../assets/img/person/01/person-profile_min.jpg', alt=`${person} ${suzuki}`)
+          .person-Profile_Txt_Wrapper
+            h3.name.wow.fadeInUp(data-wow-delay='0.4s') #{suzuki}
+            p.position.wow.fadeInUp(data-wow-delay='0.6s')  #{suzuki_position1} #{suzuki_position2}
+            p.body.wow.fadeInUp(data-wow-delay='0.8s') ドイツの大学院で研究に従事後、ドイツ住友商事会社に入社。2009年に住友商事に入社し、自動車事業に従事。2018年より米国に駐在し、自動車ビジネスの拡大を推進。
+
+    //- リンク
+    .person-Link_Wrapper.js-img_scroll_fade_in
+      .person-Link
+        .person-Link_Inner.person-01.wow.fadeInUp(data-wow-delay='0.2s')
+          a.person-Link_Txt_Wrapper(href='02.html')
+            h3.title.font-Noto.wow.fadeInUp(data-wow-delay='0.4s') 公認会計士としての経験を武器に、<br class="hidden_SP">アドバイザーではなく「自分でやりたい」と思った。
+            p.position.wow.fadeInUp(data-wow-delay='0.6s') #{ebukuro_position}
+            p.body.wow.fadeInUp(data-wow-delay='0.8s') #{ebukuro}
+            img.arrow(src="../assets/img/common/arrow_white.svg", alt="arrow")
+            include /_includes/_st_arrow_white

@@ -1,0 +1,28 @@
+// z-index
+// 参照169p
+
+// openingで3秒（3回？）動くやつ
+$Z_LOADING_CUBE: 21;
+// openingの背景白のグリッドで消えるやつ
+$Z_LOADING_CUBE_BG: 20;
+
+// header tablet ~ SP
+$Z_HEADER_TABLET: 11;
+
+// SP_navi
+$Z_NAV_BTN: 12;
+$Z_NAV: 11;
+$Z_NAV_BG: 10;
+
+// Page_Top
+$Z_PAGE_TOP: 5;
+
+// header PC ~ tablet
+$Z_HEADER_PC: 2;
+
+// 同じブロックとの比較で一応z=1 or 2にしている
+$Z_2: 2;
+$Z_1: 1;
+
+// コンテンツ部分のCube
+$Z_CONTENTS_BG_CUBE: -1;

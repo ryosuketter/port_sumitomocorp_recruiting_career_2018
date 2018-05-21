@@ -1,0 +1,22 @@
+//- footer
+mixin footer(path)
+  footer
+    .st-Footer_Link_Wrapper
+      .st-Footer_Link
+        .st-Footer_Link_Inner
+          .st-Footer_Link_Detail.career.wow.fadeIn(data-wow-delay='0.2s')
+            a(href=path + "career/")
+              span.wow.fadeIn(data-wow-delay='0.6s') #{career}について
+                img.arrow(src=path + "./assets/img/common/arrow_white.svg", alt="arrow")
+                include /_includes/_st_arrow_white
+          .st-Footer_Link_Detail.wanted.wow.fadeIn(data-wow-delay='0.4s')
+            a(href="https://job.axol.jp/bw/c/sumitomocorp/job/search" target="_blank")
+              span.wow.fadeIn(data-wow-delay='0.8s').external-Link #{job_category}一覧はこちら
+                img.arrow(src=path + "./assets/img/common/arrow_white.svg", alt="arrow")
+                include /_includes/_st_arrow_white
+    .st-Footer_Bottom_Wrapper
+      .st-Footer_Bottom_Detail.link
+        a(href='http://www.sumitomocorp.co.jp/' target="_blank") 住友商事株式会社HP
+      .st-Footer_Bottom_Detail.txt
+        p Copyright©2017 Sumitomo Corporation All Rights Reserved.
+//- /footer

@@ -1,0 +1,92 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= `${person}｜住友商事株式会社 | ${ebukuro}`;
+  - var pageDescription= "キャリア採用で入社した社員が日々どんなやりがいを持って働いているか紹介します。";
+  - var pageKeywords= `住友商事株式会社,${person},${ebukuro}`;
+  //- Optional
+  - var pageOgpTitle= pageTitle;
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "person/02.html";
+  - var classname_mv = "Underlayer";
+
+block content
+  //- contents
+
+  //- MV
+  .person-Mv_Wrapper
+    .person-Mv
+      .person-Mv_Inner.person-02
+        .person-Txt_Inner
+          p.sub-Title.font-Noto.st-Title_Fade_In_01 #{person}
+          h2.title.font-Noto.st-Title_Fade_In_02 公認会計士としての経験を武器に、<br class="hidden_SP">アドバイザーではなく「自分でやりたい」と思った。
+          p.position.st-Title_Fade_In_03 #{ebukuro_position}
+          p.name.st-Title_Fade_In_04 #{ebukuro}
+    include /_includes/_st_mv_grid
+
+  include /_includes/_bg_cube_grid
+    //- コンテンツ1
+    .person-Contents_01_Wrapper
+      .person-Contents_01
+        .person-Contents_01_Inner
+          .person-Contents_01_Img_Wrapper.js-img_scroll_fade_in
+            img.wow.fadeIn(src='../assets/img/person/02/person-contents_01_min.jpg', alt=`${person} ${ebukuro}`, data-wow-delay='0.2s')
+            //- パラパラフェードイン
+            //- .person-Fade_In.Img01-02-Person.js-img_scroll_fade_in
+          .person-Contents_01_Txt_Wrapper.js-img_scroll_fade_in
+            h3.title.font-Noto 学生時代からの「自然な流れ」を飛び出して、M&Aの多い総合商社で、出資先のCFOになると決めた。
+            p.body 学生時代は、公認会計士の資格取得のためにWスクールをしていました。新卒時には、監査以外の仕事をしてみたいという想いもありましたが、公認会計士になるために実務経験を積む必要もあり、監査法人に入所しました。入所後は3年間ほど、大手総合商社の監査業務を担当し、非常に刺激的な日々を過ごしました。周りにはタフで厳しい人も多かったので、正直かなり鍛えられましたね（笑）。
+            p.body 監査法人では、案件ごとにチームが組まれるため、仕事をする相手がその都度変わります。そのため、環境に応じて柔軟に働くコツをつかめたように思います。また、監査業務というのは、期限が明確に決まっており、最低限、約束したタイムラインを守るなど社会人としての基礎も身につけられました。
+            p.body その後、M&Aアドバイザリー業務を行うグループ会社に異動し、主に買収案件にかかるデューディリジェンスや財務諸表作成支援の仕事を4年ほど経験する中で、監査人やアドバイザーという立場ではなく「事業会社に入って、自分でビジネスに関わってみたい」という気持ちがさらに強くなり、M&A案件を数多くこなし、様々な事業会社を見ることができる総合商社を志望しました。将来的には当社が出資する事業会社の財務経理分野を担いながら、その会社の成長を支援できるようなポジションに関心があります。さすがに住友商事のCFOとまでは言えないですが、いずれ出資先のCFOなどを経験してみたいですね。
+
+    //- コンテンツ2
+    .person-Contents_02_Wrapper
+      .person-Contents_02
+        .person-Contents_02_Inner
+          .person-Contents_02_Bg_Img_Wrapper.person-02
+            .person-Contents_02_Txt_Wrapper.js-img_scroll_fade_in
+              h3.title.font-Noto 転換期だからこそできる「システム導入」という仕事。泥臭くても重要なミッションに、やりがいを見出す。
+              p.body 住友商事に入社してからは、全社決算を担当する主計部に所属した後、連結会計システム導入のプロジェクトに携わっています。当社では、現在のシステムをリリースしてから相当期間が経過しているため、現在の決算や業績管理の形態に合わせて柔軟に対応することができる、海外を含む住友商事グループ全体を巻き込んだ一体システムの構築が求められています。システムに関しては、前職では全く経験がなく、正直想像もしていなかった仕事でしたが、システム導入チームのメンバーとしてベンダーと連携しながら、システム導入成功に向けて日々業務を行っています。
+              p.body システムの仕事というと「難しい、細かい、地味」などのイメージが強いですし、実際のところ95%くらいは泥臭い仕事です。不具合がなくても誰も褒めてくれないですし、逆に一つでも不具合があれば怒られてしまうものです。しかし、だからこそ会社の屋台骨を支えるとても重要なミッションであると思っています。また、これほどの規模のシステム導入に携われるのは、会社としての「転換期」だからこその特別な経験だと考えています。これは、タイミングが合わなければ、望んだとしても決して関与できない仕事なので、自分がその一部を担当できることを嬉しく思っていますし、代えがたい経験です。まずはこのシステム導入をきちんと成功させ、その上で、元々の転職理由でもあった、事業会社のビジネスに直接携われるような経験もしてみたいですね。そして、いつか海外でも働きたいと考えています。
+          .person-Contents_02_Img_Wrapper.js-img_scroll_fade_in
+            //- パラパラフェードイン
+            //- .person-Fade_In.Img02-02-Person.js-img_scroll_fade_in
+            img.wow.fadeIn(src='../assets/img/person/02/person-contents_02_min.jpg', alt=`${person} ${ebukuro}`, data-wow-delay='0.2s')
+
+    //- コンテンツ3
+    .person-Contents_03_Wrapper
+      .person-Contents_03
+        .person-Contents_03_Inner
+          .person-Contents_03_Txt_Wrapper.js-img_scroll_fade_in
+            h3.title.font-Noto ルーチンワークではなく「価値ある仕事」を。自らの頭で考え、中途ならではの視点を大事にする。
+            p.body 住友商事の社員は、当初想像していたよりも人当たりの柔らかい人が多い印象で、私が入社した時も非常に温かく迎えていただきました。また、当社は良くも悪くもキャリア採用者としての特別扱いはありません。キャリア採用だからといってポジションが限られるということもなければ、逆に、慣れるまで仕方ないと甘やかされることもありません。そして、キャリア採用で入社したメンバーとは定期的に情報交換をしています。会社としてはまだまだ変わっていかなければならないところもたくさんあるので、これからキャリア採用で入って来られる方には、是非フレッシュな目線で一緒に会社を変えていってほしいですね。
+            p.body 私は入社するまで自分を会計の専門家だと思っていましたが、入社してみると社内には会計に詳しい人がたくさんいて、正直それほど強みにはなっていないように感じます。それよりはむしろ外の会社から来たからこその視点の方が価値を発揮していると思います。社内では当たり前とされていることも「本当にそうなのか？」「こうしたほうがもっと良くなるのでは？」と常に新鮮な目で考え、ソリューションを見つけていくことを心掛けており、これは前職のアドバイザリー業務での経験が活きていると思います。
+            p.body 会計の世界はこれからAIなどの活用で機械化が進むと言われていますが、それにより余ったリソースをどこに振り分けるかが重要なポイントです。単にルーチンワークを行なっているだけだと、将来的にはただ自分の仕事がロボットに取って代わられて終わりです。私自身も常に自分の頭で考え、「価値ある仕事、機械ではできない仕事とは何か」を問いながら仕事を続けていきたいですね。
+          .person-Contents_03_Img_Wrapper.js-img_scroll_fade_in
+            //- パラパラフェードイン
+            //- .person-Fade_In.Img03-02-Person.js-img_scroll_fade_in
+            img.wow.fadeIn(src='../assets/img/person/02/person-contents_03_min.jpg', alt=`${person} ${ebukuro}`, data-wow-delay='0.2s')
+
+    //- コンテンツ4 自己紹介
+    .person-Profile_Wrapper
+      .person-Profile
+        .person-Profile_Inner
+          .person-Profile_Img_Wrapper.wow.fadeInUp(data-wow-delay='0.2s')
+            img(src='../assets/img/person/02/person-profile_min.jpg', alt=`${person} ${ebukuro}`)
+          .person-Profile_Txt_Wrapper
+            h3.name.wow.fadeInUp(data-wow-delay='0.4s') #{ebukuro}
+            p.position.wow.fadeInUp(data-wow-delay='0.6s') #{ebukuro_position}
+            p.body.wow.fadeInUp(data-wow-delay='0.8s') 大学卒業後、監査法人へ入所。大手総合商社の監査業務やM&A案件を担当する中で、事業会社でビジネスに携わりたいと考え、2014年に住友商事に入社。現在は、連結決算・業績管理を行うための次期連結システムの導入を推進。
+
+    //- リンク
+    .person-Link_Wrapper.js-img_scroll_fade_in
+      .person-Link
+        .person-Link_Inner.person-02.wow.fadeInUp(data-wow-delay='0.2s')
+          a.person-Link_Txt_Wrapper(href='01.html')
+            h3.title.font-Noto.wow.fadeInUp(data-wow-delay='0.4s') 理系のバックグラウンドを生かして、<br class="hidden_SP">「効率性の向上」という社会貢献に挑む。
+            p.position.wow.fadeInUp(data-wow-delay='0.6s') #{suzuki_position1} #{suzuki_position2}
+            p.body.wow.fadeInUp(data-wow-delay='0.8s') #{suzuki}
+            img.arrow(src="../assets/img/common/arrow_white.svg", alt="arrow")
+            include /_includes/_st_arrow_white

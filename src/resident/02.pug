@@ -1,0 +1,89 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= `${resident}｜住友商事株式会社 | ${oomori}`;
+  - var pageDescription= "キャリア採用で入社した社員が日々どんなやりがいを持って働いているか紹介します。";
+  - var pageKeywords= `住友商事株式会社,${resident},${oomori}`;
+  //- Optional
+  - var pageOgpTitle= pageTitle;
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "resident/02.html";
+  - var classname_mv = "Underlayer";
+
+block content
+  //- contents
+
+  //- MV
+  .resident-Mv_Wrapper
+    .resident-Mv
+      .resident-Mv_Inner.resident-02
+        .resident-Txt_Inner
+          p.sub-Title.font-Noto.st-Title_Fade_In_01 駐在員のご紹介
+          h2.title.font-Noto.st-Title_Fade_In_02 全ての原点であるチュニジアの地で、<br class="show_SP">想いを形にする。
+          p.position.st-Title_Fade_In_03 #{oomori_position1} #{oomori_position2}
+            //- span.year 2011年入社
+          p.name.st-Title_Fade_In_04 #{oomori}
+    include /_includes/_st_mv_grid
+
+  include /_includes/_bg_cube_grid
+    //- コンテンツ1
+    .resident-Contents_01_Wrapper
+      .resident-Contents_01
+        .resident-Contents_01_Inner
+          .resident-Contents_01_Img_Wrapper
+            img.pc.wow.fadeIn(src='../assets/img/resident/02/resident-contents_01_min.jpg', alt=`${resident} ${oomori}`, data-wow-delay='0.2s')
+            img.sp.wow.fadeIn(src='../assets/img/resident/02/resident-contents_01_sp_min.jpg', alt=`${resident} ${oomori} スマホ用画像`, data-wow-delay='0.2s')
+          .resident-Contents_01_Txt_Wrapper.wow.fadeInUp(data-wow-delay='0.2s')
+            h3.title.font-Noto.wow.fadeInUp(data-wow-delay='0.4s') 幼少期の経験が今の私の原点。様々な携わり方を通じてたどり着いた私の答え。
+            p.body.wow.fadeInUp(data-wow-delay='0.6s') 父親の仕事の関係で幼少期をチュニジアで過ごしました。街を出るとそこにはスラム街が広がり、自分の生活とは大きく異なる生活環境にショックを受けたのと、そこに住む同い年位の子供に石を投げられたことを今でも鮮明に覚えています。また、我が家のお手伝いさんはアラビア語、フランス語、スペイン語の3か国語を話せるのに、学校に行けなかったために看板の文字すら読めないことを知り、小学生ながらに途上国の貧困問題をどうにかしなければいけない、自分にもできることがあるのではないかと感じるようになりました。
+            p.body.wow.fadeInUp(data-wow-delay='0.8s') 他方で、当時のチュニジアには、おもちゃや遊ぶ場所が少なかったので、海岸によく遊びに行きました。大自然に思いっきり触れた経験から、自然を大切にしたいという思いが芽生え、日本に帰国した小学校6年生からは、環境問題や自然に関する新聞記事のスクラップブックを作るようになりました。「貧困」と「環境問題」。チュニジアで心に深く刻まれた想いが、今も変わらず私の原点です。
+            p.body.wow.fadeInUp(data-wow-delay='1.0s') その後、大学では環境法を、大学院では環境学を専攻し、新卒就活時は途上国の発展に直接的に貢献できエネルギー問題にも携われる仕事に惹かれ、大手エンジニアリング会社に営業職として入社しました。途上国の温室効果ガス削減プロジェクトの開発プロジェクトに携わる中で、より専門性を身につけたいという思いが膨らみ、環境問題専門のコンサルティング会社に転職しました。プライベートでは結婚し、その後配偶者の仕事の関係で1年強休職した時期もありましたが、休職期間中もロンドンやチュニジアで温室効果ガス削減プロジェクトのための調査活動に携わるなど精力的に活動しました。それらの経験を経て、単に一つの側面から「あるべき姿」をアドバイスするのではなく、より主体的に意思決定をしながら案件に携わりたいと強く考えるようになり、住友商事への入社を決意しました。
+
+    //- コンテンツ2
+    .resident-Contents_02_Wrapper
+      .resident-Contents_02
+        .resident-Contents_02_Inner
+          .resident-Contents_02_Bg_Img_Wrapper.resident-02
+            .resident-Contents_02_Txt_Wrapper
+              h3.title.font-Noto.wow.fadeIn(data-wow-delay='0.6s') 「成長の場」を求めて挑戦した結果、様々な経験を通して、成長させてくれる環境があった。
+              p.body.wow.fadeInUp(data-wow-delay='0.8s') 実は、当初は仕事上取引のあった会社への転職も考えていたのですが、面接の中で住友商事の社員と話す中で「今の自分がこの会社でできることは少ないけれど、自分の可能性を広げる環境としては住友商事の方が良いのではないか」と考え、敢えて厳しい環境で挑戦したいとの想いで住友商事を選びました。
+              p.body.wow.fadeInUp(data-wow-delay='1.0s') 入社してからは、2年間隔で様々な業務を経験しました。入社直後は環境ビジネスの開発で、温室効果ガスの分離技術を持ったベンチャー企業と事業化を目指すというものでした。その次は、欧米の上下水道の事業会社のM&Aです。その後2015年に現在の部署に異動し、アフリカにおける火力発電所のEPCプロジェクトに従事しています。
+              p.body.wow.fadeInUp(data-wow-delay='1.2s') 過去数年を振り返ると、M&A、水事業、新技術の事業化など、全てが未経験で手探りの状態でした。コンサル時代の習性か、ついついその分野について頭で完璧に理解してから動き出す癖があり、2年かけて漸く一つの仕事を理解したところで異動となり「会社に貢献できた」という実感は正直まだもてていないです。ただ、3つの本部に所属したことで社内のネットワークが自然と広がり、優秀な上司や先輩にも多く出会うことができましたし、社員の教育に熱心な会社の風土もあり、この未知の世界に飛び込んで良かったと思っています。
+          .resident-Contents_02_Img_Wrapper
+            img.wow.fadeIn(src='../assets/img/resident/02/resident-contents_02_min.jpg', alt=`${resident} ${oomori}`, data-wow-delay='0.2s')
+
+    //- コンテンツ3
+    .resident-Contents_03_Wrapper
+      .resident-Contents_03
+        .resident-Contents_03_Inner
+          .resident-Contents_03_Img_Wrapper.wow.fadeIn(data-wow-delay='0.2s')
+            img(src='../assets/img/resident/02/resident-contents_03_min.jpg', alt=`${resident} ${oomori}`)
+          .resident-Contents_03_Txt_Wrapper
+            h3.title.font-Noto.wow.fadeInUp(data-wow-delay='0.6s') 希望に耳を傾け、チャンスを与えてくれる会社。<br class="hidden_SP">アフリカの地でゼロから<br class="hidden_SP">ビジネスをつくる。
+            p.body.wow.fadeInUp(data-wow-delay='0.8s') 2017年よりチュニジアに駐在し、Project coordination Managerとして首都近郊のガス火力発電所の建設に携わっています。入社前から「アフリカのビジネスに携わりたい」という想いと、また、入社してから様々な経験を積む中で「ゼロからモノを創り出す仕事に関わりたい」との希望を伝え続けてきました。アフリカの地でグリーンフィールドからビジネスを立ち上げる今の仕事は、会社が与えてくれたチャンスであると思っています。
+            p.body.wow.fadeInUp(data-wow-delay='1.0s') プロジェクトは始まったばかりなので本当の困難はこれからだと思いますが、チュニジアには当社の駐在員事務所がないので、最初の仕事は工事事務所の立ち上げから。2017年は事務所設立の手順を調べたり、人材派遣会社を探したり、両面カラー印刷ができるところを探しに運転手といくつもの店をまわったりと悪戦苦闘の毎日でした。事務所立ち上げ後も、予想しなかったような問題が日々起こっています。困った時には、幼少時代からの在チュニジアの友人や知人にも沢山助けてもらっています。
+            p.body.wow.fadeInUp(data-wow-delay='1.2s') 約30年ぶり目にしたチュニジアは、もはや発展途上国ではなく、中進国入り目前までに発展していました。まだ限定的ですが、海外ブランドの服やヨーロッパの食材が手に入るようになるなど、物質的に豊かになり、ジャスミン革命後に表現の自由が認められるようになったり、お手伝いさんでもフランス語のSMSを送れたり、社会文化的にも発展したのを肌で感じています。小学生の頃のチュニジアでの経験が原点となり、これまでの様々な経験が点と点で繋がり、縁あって再び電力事業を通じてチュニジアと現地の人々に貢献できることはこの上ないやりがいです。2020年の完工を目指し、このプロジェクトを絶対に成功させたい、そんな想いで日々奔走しています。
+
+    //- 自己紹介
+    .resident-Profile_Wrapper
+      .resident-Profile
+        .resident-Profile_Inner
+          .resident-Profile_Img_Wrapper.wow.fadeIn(data-wow-delay='0.2s')
+            img(src='../assets/img/resident/02/resident-profile_min.jpg', alt=`${resident} ${oomori}`)
+          .resident-Profile_Txt_Wrapper
+            h3.name.wow.fadeInUp(data-wow-delay='0.4s') #{oomori}
+            p.position.wow.fadeInUp(data-wow-delay='0.6s')  #{oomori_position1} #{oomori_position2}
+            p.body.wow.fadeInUp(data-wow-delay='0.8s') 大学院修了後、大手エンジニアリング会社に入社。その後、環境問題専門のコンサルティング会社を経て、2011年に住友商事へ入社。入社後は環境ビジネスの開発等に携わり、現在はチュニジアの首都近郊のガス火力発電所建設プロジェクトを推進。
+
+    //- リンク
+    .resident-Link_Wrapper
+      .resident-Link
+        .resident-Link_Inner.resident-02.wow.fadeInUp(data-wow-delay='0.2s')
+          a.resident-Link_Txt_Wrapper(href='01.html')
+            h3.title.font-Noto.wow.fadeInUp(data-wow-delay='0.4s') 事業開発の最前線へ。<br class="hidden_SP">シリコンバレーで“革新の種”を探す。
+            p.position.wow.fadeInUp(data-wow-delay='0.6s') #{nakamura_position1} #{nakamura_position2}
+            p.body.wow.fadeInUp(data-wow-delay='0.8s') #{nakamura}
+            img.arrow(src="../assets/img/common/arrow_white.svg", alt="arrow")
+            include /_includes/_st_arrow_white

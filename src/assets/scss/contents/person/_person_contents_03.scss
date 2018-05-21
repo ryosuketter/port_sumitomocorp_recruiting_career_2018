@@ -1,0 +1,254 @@
+.person-Contents_03_Wrapper {
+  .person-Contents_03 {
+    .person-Contents_03_Inner {
+      display: flex;
+      flex-flow: row-reverse;
+      margin: 0 auto 200px;
+      max-width: 1680px;
+    }
+  }
+}
+
+.person-Contents_03_Img_Wrapper {
+  position: relative;
+
+  font-size: 0;
+
+  img {
+    position: relative;
+
+    z-index: $Z_2;
+    // display: none;
+  }
+
+  &:after {
+    position: absolute;
+    bottom: -40px;
+
+    background-color: $Light_Blue;
+    content: "";
+    display: block;
+    height: 120px;
+    width: 90%;
+    z-index: $Z_1;
+  }
+}
+
+.person-Contents_03_Txt_Wrapper {
+  margin-left: 120px;
+  width: 480px;
+
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .body {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 2.2;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@include max-screen(1700px) {
+  .person-Contents_03_Wrapper {
+    .person-Contents_03 {
+      .person-Contents_03_Inner {
+        display: flex;
+        flex-flow: row-reverse;
+        margin: 0 auto 200px;
+        max-width: 100%;
+        padding: 0 4%;
+      }
+    }
+  }
+
+  .person-Contents_03_Img_Wrapper {
+    position: relative;
+
+    font-size: 0;
+    height: 100%;
+
+    img {
+      position: relative;
+      // width: 600px;
+      // height: 466px;
+
+      width: 90%;
+      z-index: $Z_2;
+    }
+
+    &:after {
+      position: absolute;
+      top: 100%;
+      bottom: auto;
+
+      background-color: $Light_Blue;
+      content: "";
+      display: block;
+      height: 60px;
+      width: 80%;
+      z-index: $Z_1;
+    }
+  }
+
+  .person-Contents_03_Txt_Wrapper {
+    margin-left: 20px;
+    width: 580px;
+
+    .title {
+      font-size: 28px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .body {
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 2.2;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .person-Contents_03_Wrapper {
+    .person-Contents_03 {
+      .person-Contents_03_Inner {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin: 0 auto 140px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .person-Contents_03_Img_Wrapper {
+    position: relative;
+
+    font-size: 0;
+    margin: 0 auto;
+
+
+    img {
+      position: relative;
+      // display: inline-block;
+
+      width: 600px;
+      z-index: $Z_2;
+    }
+
+    &:after {
+      position: absolute;
+      top: 460px;
+      bottom: auto;
+
+      background-color: $Light_Blue;
+      content: "";
+      display: block;
+      height: 60px;
+      width: 90%;
+      z-index: $Z_1;
+    }
+  }
+
+  .person-Contents_03_Txt_Wrapper {
+    margin: 0 auto;
+    padding-bottom: 16px;
+    width: 70%;
+
+    .title {
+      font-size: 28px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .body {
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 2.2;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .person-Contents_03_Wrapper {
+    .person-Contents_03 {
+      .person-Contents_03_Inner {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin: 0 auto 72px;
+        max-width: 100%;
+        padding: 0;
+      }
+    }
+  }
+
+  .person-Contents_03_Img_Wrapper {
+    position: relative;
+
+    font-size: 0;
+    height: 100%;
+    margin-left: 0;
+    margin-right: auto;
+
+    img {
+      position: relative;
+      // width: 300px;
+      // height: 234px;
+
+      width: 95%;
+      z-index: $Z_2;
+    }
+
+    &:after {
+      position: absolute;
+      top: 100%;
+      bottom: auto;
+
+      background-color: $Light_Blue;
+      content: "";
+      display: block;
+      height: 30px;
+      width: 86%;
+      z-index: $Z_1;
+    }
+  }
+
+  .person-Contents_03_Txt_Wrapper {
+    margin: 0 auto;
+    padding: 0 25px 16px;
+    width: 98%;
+
+    .title {
+      font-size: 19px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .body {
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 2;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

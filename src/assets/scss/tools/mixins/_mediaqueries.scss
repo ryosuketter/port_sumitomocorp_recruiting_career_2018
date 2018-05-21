@@ -1,0 +1,23 @@
+// 参照134p
+
+// これも参照
+// http://qiita.com/kyaido/items/828906ffa7198e99d0b7
+
+@mixin max-screen($break-point) {
+  // 引数に設定された画面幅以下のスタイルを指定するメディアクエリ
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin screen($break-point-min, $break-point-max) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}

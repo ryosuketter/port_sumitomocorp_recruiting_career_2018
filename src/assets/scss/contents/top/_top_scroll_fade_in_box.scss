@@ -1,0 +1,194 @@
+.top-Message_Box {
+  opacity: 0;
+
+  &.fade-In {
+    animation: scroll_fadein_up_top-Message_Box 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: both;
+
+    .top-Message_Box_Body {
+      .title {
+        animation: scroll_fadein_up_element 1s;
+        animation-delay: 1.4s;
+        animation-fill-mode: both;
+      }
+      .body {
+        animation: scroll_fadein_up_element 1s;
+        animation-delay: 1.6s;
+        animation-fill-mode: both;
+      }
+      .top-Message_Box_Readmore {
+        animation: scroll_fadein_up_element 1s;
+        animation-delay: 1.8s;
+        animation-fill-mode: both;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .top-Message_Inner {
+    img.js-img_scroll_fade_in {
+      opacity: 0;
+      &.fade-In {
+        animation: scroll_fadein_only_op 1s;
+        animation-delay: 0.4s;
+        animation-fill-mode: both;
+      }
+    }
+  }
+}
+
+.top-Person_Txt_Wrapper {
+  .title, .body {
+    opacity: 0;
+  }
+
+  &.fade-In {
+    .title {
+      animation: scroll_fadein_up_element 1s;
+      animation-delay: 0.4s;
+      animation-fill-mode: both;
+    }
+    .body {
+      animation: scroll_fadein_up_element 1s;
+      animation-delay: 0.6s;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+.top-Person_Img_Detail_Box {
+  opacity: 0;
+
+  &.fade-In {
+    animation: scroll_fadein_up_top-Person_Img_Detail_Box 0.8s;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+
+    .title {
+      animation: scroll_fadein_up_element 1s;
+      animation-delay: 1.2s;
+      animation-fill-mode: both;
+    }
+    .body {
+      animation: scroll_fadein_up_element 1s;
+      animation-delay: 1.4s;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .top-Person_Img_Detail_Wrapper {
+    a.js-img_scroll_fade_in {
+      opacity: 0;
+      &.fade-In {
+        animation: scroll_fadein_only_op 1s;
+        animation-delay: 0.4s;
+        animation-fill-mode: both;
+      }
+    }
+  }
+  .top-Person_Img_Detail_Box {
+    opacity: 0;
+
+    &.fade-In {
+      animation: scroll_fadein_only_op 0.8s;
+      animation-delay: 0.6s;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+.top-Talk_Img_Detail_Box {
+  opacity: 0;
+
+  &.fade-In {
+    animation: scroll_fadein_up_top-Talk_Img_Detail_Box 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: both;
+
+    .title {
+      animation: scroll_fadein_up_element 1s;
+      animation-delay: 1.4s;
+      animation-fill-mode: both;
+    }
+    .body {
+      animation: scroll_fadein_up_element 1s;
+      animation-delay: 1.6s;
+      animation-fill-mode: both;
+    }
+    .top-Talk_Box_Readmore {
+      animation: scroll_fadein_up_element 1s;
+      animation-delay: 1.8s;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .top-Talk_Img_Detail_Wrapper {
+    img.js-img_scroll_fade_in {
+      opacity: 0;
+      &.fade-In {
+        animation: scroll_fadein_only_op 0.8s;
+        animation-delay: 0.6s;
+        animation-fill-mode: both;
+      }
+    }
+  }
+}
+
+.top-Resident_Box.box-01 {
+  .title, .body {
+    opacity: 0;
+  }
+
+  &.fade-In {
+    .title {
+      animation: scroll_fadein_up_element 1s;
+      animation-delay: 1s;
+      animation-fill-mode: both;
+    }
+    .body {
+      animation: scroll_fadein_up_element 1s;
+      animation-delay: 1.2s;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+.top-Resident_Box_Detail.js-img_scroll_fade_in {
+
+  .name, .position {
+    opacity: 0;
+  }
+
+  &.fade-In {
+    .name {
+      animation: scroll_fadein_up_top-Resident_Box_Detail 1s;
+      animation-delay: 1.4s;
+      animation-fill-mode: both;
+    }
+    .position {
+      animation: scroll_fadein_up_top-Resident_Box_Detail 1s;
+      animation-delay: 1.4s;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .top-Resident_Box_Detail.box-Detail_01, .top-Resident_Box_Detail.box-Detail_02 {
+    a.js-img_scroll_fade_in {
+      opacity: 0;
+
+      &.fade-In {
+        animation: scroll_fadein_only_op 0.8s;
+        animation-delay: 0.6s;
+        animation-fill-mode: both;
+      }
+    }
+  }
+}

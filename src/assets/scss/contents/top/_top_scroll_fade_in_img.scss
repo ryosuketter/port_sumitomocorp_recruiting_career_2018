@@ -1,0 +1,219 @@
+// height × all -1
+.top-Message_Inner {
+  .top-Fade_In {
+    &.fade-In {
+      animation: fade_in_animation_01 0.6s steps(16);
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+.top-Person_Img_Detail_Wrapper {
+  .top-Fade_In {
+    &.fade-In {
+      animation: fade_in_animation_0203 0.6s steps(16);
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+.top-Talk_Img_Detail_Wrapper {
+  .top-Fade_In {
+    &.fade-In {
+      animation: fade_in_animation_04 0.6s steps(16);
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+.top-Resident_Box_Detail {
+  .top-Fade_In {
+    &.fade-In {
+      animation: fade_in_animation_0506 0.6s steps(18);
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+.top-Fade_In {
+
+  &.Img01 {
+    background: url("../img/top/top-message_min_sprite.png") no-repeat;
+    background-size: 860px 10200px;
+    height: 600px;
+    width: 860px;
+  }
+  &.Img02 {
+    background: url("../img/top/top-person_01_min_sprite.png") no-repeat;
+    background-size: 650px 7718px;
+    height: 454px;
+    width: 625px;
+  }
+  &.Img03 {
+    background: url("../img/top/top-person_02_min_sprite.png") no-repeat;
+    background-size: 650px 7718px;
+    height: 454px;
+    width: 625px;
+  }
+  &.Img04 {
+    background: url("../img/top/top-talk_min_sprite.png") no-repeat;
+    background-size: 1200px 10880px;
+    height: 640px;
+    width: 1200px;
+  }
+  &.Img05 {
+    // background: url("../img/top/top-resident_01_min_sprite.png") no-repeat;
+    // background-size: 360px 3300px;
+    // height: 220px;
+    // width: 360px;
+    background: url("../img/top/top-resident_01_min_sprite_2.png") no-repeat;
+    background-size: 480px 5586px;
+    height: 294px;
+    width: 480px;
+  }
+  &.Img06 {
+    // background: url("../img/top/top-resident_02_min_sprite.png") no-repeat;
+    // background-size: 360px 3300px;
+    // height: 220px;
+    // width: 360px;
+    background: url("../img/top/top-resident_02_min_sprite_2.png") no-repeat;
+    background-size: 480px 5586px;
+    height: 294px;
+    width: 480px;
+  }
+}
+
+// height × all -1
+@include max-screen(1450px)  {
+  .top-Fade_In {
+
+    &.Img01 {
+      background-size: 840px 10200px;
+      height: 600px;
+      width: 840px;
+    }
+  }
+}
+
+@include max-screen(1245px) {
+  .top-Fade_In {
+
+    &.Img02 {
+      background: url("../img/top/top-person_01_min_sprite.png") no-repeat;
+      background-size: 462px 5610px;
+      height: 330px;
+      width: 462px;
+    }
+    &.Img03 {
+      background: url("../img/top/top-person_02_min_sprite.png") no-repeat;
+      background-size: 462px 5610px;
+      height: 330px;
+      width: 462px;
+    }
+  }
+}
+
+@include max-screen(1244px) {
+  .top-Fade_In {
+
+    &.Img04 {
+      background: url("../img/top/top-talk_min_sprite.png") no-repeat;
+      background-size: 825px 7480px;
+      height: 440px;
+      width: 825px;
+      margin: 0 auto;
+    }
+  }
+}
+
+// height × 17
+@include max-screen($BREAK_POINT_TABLET) {
+  .top-Fade_In {
+
+    &.Img01 {
+      // background-size: 600px 7140px;
+      // height: 420px;
+      // width: 600px;
+      display: none;
+    }
+    &.Img02, &.Img03 {
+      display: none;
+    }
+    &.Img04 {
+      display: none;
+    }
+    &.Img05, &.Img06 {
+      display: none;
+    }
+  }
+}
+
+// @include max-screen($BREAK_POINT_SP_iPhone6) {
+//   .top-Fade_In {
+//
+//     &.Img01 {
+//       background-size: 320px 3570px;
+//       height: 210px;
+//       width: 320px;
+//     }
+//     &.Img02 {
+//       background: url("../img/top/top-person_01_min_sprite.png") no-repeat;
+//       background-size: 300px 3570px;
+//       height: 210px;
+//       width: 300px;
+//     }
+//     &.Img03 {
+//       background: url("../img/top/top-person_02_min_sprite.png") no-repeat;
+//       background-size: 300px 3570px;
+//       height: 210px;
+//       width: 300px;
+//     }
+//   }
+// }
+
+@keyframes fade_in_animation_01 {
+  to { background-position: 0 -9600px; }
+}
+@keyframes fade_in_animation_0203 {
+  to { background-position: 0 -7264px; }
+}
+@keyframes fade_in_animation_04 {
+  to { background-position: 0 -10240px; }
+}
+@keyframes fade_in_animation_0506 {
+  to { background-position: 0 -5292px; }
+}
+
+// height × 16
+@include max-screen(1245px) {
+  @keyframes fade_in_animation_0203 {
+    to { background-position: 0 -5280px; }
+  }
+}
+
+@include max-screen(1244px) {
+  @keyframes fade_in_animation_04 {
+    to { background-position: 0 -7040px; }
+  }
+}
+
+// height × 16
+// @include max-screen($BREAK_POINT_TABLET) {
+//   @keyframes fade_in_animation_01 {
+//     to { background-position: 0 -6720px; }
+//   }
+// }
+
+// height × 16
+// @include max-screen($BREAK_POINT_SP_iPhone6) {
+//   @keyframes fade_in_animation_01 {
+//     to { background-position: 0 -3360px; }
+//   }
+//   @keyframes fade_in_animation_0203 {
+//     to { background-position: 0 -3360px; }
+//   }
+// }

@@ -1,0 +1,51 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= `${message}｜住友商事株式会社`;
+  - var pageDescription= "キャリア採用で入社した社員が日々どんなやりがいを持って働いているか紹介します。";
+  - var pageKeywords= `住友商事株式会社,${message}`;
+  //- Optional
+  - var pageOgpTitle= pageTitle;
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "message/index.html";
+  - var classname_mv = "Underlayer";
+
+block content
+  //- contents
+
+  //- MV
+  .message-Mv_Wrapper
+    .message-Mv
+      .message-Mv_Inner
+        .message-Txt_Inner
+          h2.title.font-Noto.st-Title_Fade_In_01 #{message}
+          p.description.st-Title_Fade_In_02 住友商事では、さまざまなバックグラウンドを持ったキャリア採用の社員が活躍しています。<br class="hidden_SP">当社キャリア採用に興味を持ってくださる皆さんに向けて採用チームからのメッセージです。
+    include /_includes/_st_mv_grid
+
+  include /_includes/_bg_cube_grid
+    //- コンテンツ1
+    .message-Contents_01_Wrapper
+      .message-Contents_01
+        .message-Contents_01_Inner
+          .message-Contents_Img_Wrapper.message-Contents_Img_01.js-img_scroll_fade_in
+            img.wow.fadeIn(src='../assets/img/message/message-contents_01_01_min.jpg', alt=`${message}` + ' 01', data-wow-delay='0.2s')
+            //- パラパラフェードイン
+            //- .message-Fade_In.Img01-Message.js-img_scroll_fade_in
+          .message-Contents_Txt_Wrapper.js-img_scroll_fade_in
+            .message-Contents_Txt_Inner.js-img_scroll_fade_in
+              .message-Contents_Txt_Box
+                p.body 当社を取り巻くビジネス環境は大きく変化しています。<br class="hidden_SP">AI・IoTなどのテクノロジーの進歩、人々の価値観や行動様式の変化、そして産業のボーダレス化が進む中で、我々も既存の概念にとらわれず新しい価値を創造しようとしています。<br class="hidden_SP">そのためには多様な人材がそれぞれの強みを活かし、共に協力し合いながら新たなことに挑戦していく必要があります。
+              .message-Contents_Txt_Box
+                p.body 我々がキャリア採用者に求めているのは、当社にはない「高い専門性」と「多種多様な経験」、そして「変革力」です。<br class="hidden_SP">多様な経験と強みを持つ皆さんを迎えることで、当社は社会に新しい価値を提供しつづけ、世の中をさらに豊かにできると考えています。
+              .message-Contents_Txt_Box
+                p.body 400年続く住友の事業精神を大切にしながら、日々進化を続ける当社のビジネスフィールドで共に挑戦し、夢を実現したい方をお待ちしています。
+              .message-Contents_Txt_Box
+                p.team 住友商事株式会社 採用チーム
+          .message-Contents_Img_Wrapper.message-Contents_Img_02.js-img_scroll_fade_in
+            img.wow.fadeIn.pc(src='../assets/img/message/message-contents_01_02_min.jpg', alt=`${message}` + ' 02', data-wow-delay='0.4s')
+            img.wow.fadeIn.sp(src='../assets/img/message/message-contents_01_02_sp_min.jpg', alt=`${message}` + ' 02', data-wow-delay='0.4s')
+            //- パラパラフェードイン
+            //- .message-Fade_In.Img02-Message.js-img_scroll_fade_in
+            p.wow.fadeIn.pc(data-wow-delay='0.6s') 採用チーム長 岩本 健一

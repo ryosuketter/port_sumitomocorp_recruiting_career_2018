@@ -1,0 +1,120 @@
+// .person-Contents_01_Img_Wrapper,
+// .person-Contents_01_Txt_Wrapper,
+// .person-Contents_02_Img_Wrapper,
+// .person-Contents_02_Txt_Wrapper,
+// .person-Contents_03_Img_Wrapper,
+// .person-Contents_03_Txt_Wrapper,
+// .person-Profile_Wrapper,
+// .person-Link_Wrapper {
+//   opacity: 0;
+//
+//   &.fade-In {
+//     animation: scroll_fadein_only_op 1s;
+//     animation-delay: 0.4s;
+//     animation-fill-mode: both;
+//   }
+// }
+
+.person-Contents_01_Txt_Wrapper {
+  opacity: 0;
+
+  &.fade-In {
+    animation: scroll_fadein_up_person-Contents_01_Txt_Wrapper 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: both;
+
+    .title {
+      animation: scroll_fadein_up_element 1s;
+      animation-delay: 1.0s;
+      animation-fill-mode: both;
+    }
+
+    .body {
+      &:nth-child(2) {
+        animation: scroll_fadein_up_element 1s;
+        animation-delay: 1.2s;
+        animation-fill-mode: both;
+      }
+      &:nth-child(3) {
+        animation: scroll_fadein_up_element 1s;
+        animation-delay: 1.4s;
+        animation-fill-mode: both;
+      }
+      &:nth-child(4) {
+        animation: scroll_fadein_up_element 1s;
+        animation-delay: 1.6s;
+        animation-fill-mode: both;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .person-Contents_01_Txt_Wrapper {
+    opacity: 0;
+
+    &.fade-In {
+      animation: scroll_fadein_up_person-Contents_01_Txt_Wrapper_SP 1s;
+      animation-delay: 0.4s;
+      animation-fill-mode: both;
+
+      .title {
+        animation: scroll_fadein_up_element 1s;
+        animation-delay: 0.8s;
+        animation-fill-mode: both;
+      }
+
+      .body {
+        &:nth-child(2) {
+          animation: scroll_fadein_up_element 1s;
+          animation-delay: 1.0s;
+          animation-fill-mode: both;
+        }
+        &:nth-child(3) {
+          animation: scroll_fadein_up_element 1s;
+          animation-delay: 1.2s;
+          animation-fill-mode: both;
+        }
+        &:nth-child(4) {
+          animation: scroll_fadein_up_element 1s;
+          animation-delay: 1.4s;
+          animation-fill-mode: both;
+        }
+      }
+    }
+  }
+}
+
+.person-Contents_02_Txt_Wrapper,
+.person-Contents_03_Txt_Wrapper {
+  .title,.body {
+    opacity: 0;
+  }
+
+  &.fade-In {
+
+    .title {
+      animation: scroll_fadein_up_element 1s;
+      animation-delay: 0.8s;
+      animation-fill-mode: both;
+    }
+
+    .body {
+      &:nth-child(2) {
+        animation: scroll_fadein_up_element 1s;
+        animation-delay: 1.0s;
+        animation-fill-mode: both;
+      }
+      &:nth-child(3) {
+        animation: scroll_fadein_up_element 1s;
+        animation-delay: 1.2s;
+        animation-fill-mode: both;
+      }
+      &:nth-child(4) {
+        animation: scroll_fadein_up_element 1s;
+        animation-delay: 1.4s;
+        animation-fill-mode: both;
+      }
+    }
+  }
+}

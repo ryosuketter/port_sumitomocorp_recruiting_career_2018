@@ -1,0 +1,89 @@
+.st-Nav_Wrapper_Bg {
+  position: fixed;
+  top: 0;
+  left: 100%;
+
+  animation: nav_Bg 4s ease-in-out infinite;
+  background: linear-gradient(246deg, #74d9dc 0%, #4fa6a8 64%, #a1d4d6 100%);
+  background-size: 300% 300%;
+  display: block;
+  height: 100vh;
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+  z-index: $Z_NAV_BG;
+}
+
+.st-Nav_Wrapper {
+  .st-Nav {
+    .st-Nav_Inner {
+      display: none;
+    }
+  }
+
+  &.clicked {
+    .st-Nav {
+      .st-Nav_Inner {
+        display: block;
+        position: fixed;
+        z-index: $Z_NAV;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-left: 50px;
+
+        display: block;
+        width: 100%;
+
+        ul {
+          li {
+            list-style: none;
+
+            animation: nav_Txt_Link;
+            animation-duration: 0.4s;
+            animation-fill-mode: both;
+
+            position: relative;
+
+            &:not(:last-child) {
+              margin-bottom: 30px;
+            }
+
+            &:nth-child(1) {
+              animation-delay: 0.2s;
+            }
+            &:nth-child(2) {
+              animation-delay: 0.3s;
+            }
+            &:nth-child(3) {
+              animation-delay: 0.4s;
+            }
+            &:nth-child(4) {
+              animation-delay: 0.5s;
+            }
+            &:nth-child(5) {
+              animation-delay: 0.6s;
+            }
+            &:nth-child(6) {
+              animation-delay: 0.7s;
+            }
+            &:nth-child(7) {
+              animation-delay: 0.8s;
+            }
+            &:nth-child(8) {
+              animation-delay: 0.9s;
+            }
+            &:nth-child(9) {
+              animation-delay: 1.0s;
+            }
+
+            a {
+              font-size: 16px;
+              color: #fff;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

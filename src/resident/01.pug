@@ -1,0 +1,87 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= `${resident}｜住友商事株式会社 | ${nakamura}`;
+  - var pageDescription= "キャリア採用で入社した社員が日々どんなやりがいを持って働いているか紹介します。";
+  - var pageKeywords= `住友商事株式会社,${resident},${nakamura}`;
+  //- Optional
+  - var pageOgpTitle= pageTitle;
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "resident/01.html";
+  - var classname_mv = "Underlayer";
+
+block content
+  //- contents
+
+  //- MV
+  .resident-Mv_Wrapper
+    .resident-Mv
+      .resident-Mv_Inner.resident-01
+        .resident-Txt_Inner
+          p.sub-Title.font-Noto.st-Title_Fade_In_01 駐在員のご紹介
+          h2.title.font-Noto.st-Title_Fade_In_02 事業開発の最前線へ。<br class="show_SP">シリコンバレーで“革新の種”を探す。
+          p.position.st-Title_Fade_In_03 #{nakamura_position1} #{nakamura_position2}
+            //- span.year 2011年入社
+          p.name.st-Title_Fade_In_04 #{nakamura}
+    include /_includes/_st_mv_grid
+
+  include /_includes/_bg_cube_grid
+    //- コンテンツ1
+    .resident-Contents_01_Wrapper
+      .resident-Contents_01
+        .resident-Contents_01_Inner
+          .resident-Contents_01_Img_Wrapper
+            img.wow.fadeIn(src='../assets/img/resident/01/resident-contents_01_min.jpg', alt=`${resident} ${nakamura}`, data-wow-delay='0.2s')
+          .resident-Contents_01_Txt_Wrapper.wow.fadeInUp(data-wow-delay='0.6s')
+            h3.title.font-Noto.wow.fadeInUp(data-wow-delay='0.8s') 自由な発想で新しいビジネスを創る。<br class="hidden_SP">「クリエイティブな仕事」を求めていた。
+            p.body.wow.fadeInUp(data-wow-delay='1.0s') 私は新卒でメガバンクに入社しました。学生時代に漠然と「海外で大手企業を相手にスケールの大きなことをしたい」という想いを抱き、それが叶う場所としてメガバンクを選びました。入社後は法人営業の担当として、貸出先の格付や貸出業務、手数料ビジネス業務などを担当しました。そして、4年ほど経った頃「もっとクリエイティブな仕事がしたい」と思い、転職を決意しました。銀行の仕事は基本的に様々なマニュアルに従って行われることが多く、実際の業務内容は限定的であると感じていました。
+            p.body.wow.fadeInUp(data-wow-delay='1.2s') 実は、新卒の就職活動の時にも住友商事を受けていたのですが、メガバンクの内定が先に出たということを理由に、選考を途中で辞退した経緯があります。心の何処かで後悔のようなものもあったのかもしれません。改めて自分のキャリアについて考えた時、人間勝負と言いますか、自由な発想で新しいビジネスを創るような仕事がしたいと考え、住友商事の選考を受けることにしたのです。
+
+    //- コンテンツ2
+    .resident-Contents_02_Wrapper
+      .resident-Contents_02
+        .resident-Contents_02_Inner
+          .resident-Contents_02_Bg_Img_Wrapper.resident-01
+            .resident-Contents_02_Txt_Wrapper
+              h3.title.font-Noto.wow.fadeIn(data-wow-delay='0.6s') イノベーションを取り込み、<br class="hidden_SP">既存事業のバリューアップを狙う。
+              p.body.wow.fadeInUp(data-wow-delay='0.8s') 入社後は油井管事業部の事業開発チームで、全世界における新規事業投資と投資先の主管業務を担当しました。例えば、米国ではバリューチェーン強化を狙った企業買収を実行し、また各投資先の事業を拡大させるために様々なサポートを行いました。時に現地の経営陣と対峙しながら、何が住友商事グループにとってベストな答えなのかという視点で事業戦略を形にするため日々奔走しました。
+              p.body.wow.fadeInUp(data-wow-delay='1.0s') 2009年にトレーニーという社内の研修生制度で1年ほどヒューストンに赴任したのですが、2012年には駐在員として渡米し、米州住友商事の事業開発グループに所属して、中期経営計画でも掲げられている部門横断的な事業開発を推進することになりました。現在は2017年4月に当社が新たに開設したシリコンバレー店に拠点を移し、既存事業のバリューアップに繋がるイノベーション発掘に携わっています。
+              p.body.wow.fadeInUp(data-wow-delay='1.2s') 当グループのミッションは、投資により利益を上げることではありません。新たな技術や商材を探し、住友商事グループにとってのビジネスチャンスを見つけたり、将来、既存事業の脅威となり得る技術や事業モデルを早期にキャッチアップすることを目指しています。住友商事グループには約20年にわたりシリコンバレーで活動を続けるベンチャーキャピタルPresidio Venturesがあり、彼らの蓄積したネットワークも活用しながら、優れた技術を持つスタートアップ企業への出資や協業を通じて、全社の既存事業や各事業会社の更なるバリューアップに寄与したいと考えています。
+          .resident-Contents_02_Img_Wrapper
+            img.wow.fadeIn(src='../assets/img/resident/01/resident-contents_02_min.jpg', alt=`${resident} ${nakamura}`, data-wow-delay='0.2s')
+
+    //- コンテンツ3
+    .resident-Contents_03_Wrapper
+      .resident-Contents_03
+        .resident-Contents_03_Inner
+          .resident-Contents_03_Img_Wrapper.wow.fadeIn(data-wow-delay='0.2s')
+            img(src='../assets/img/resident/01/resident-contents_03_min.jpg', alt=`${resident} ${nakamura}`)
+          .resident-Contents_03_Txt_Wrapper
+            h3.title.font-Noto.wow.fadeInUp(data-wow-delay='0.6s') 中長期的な視野を持ち、<br class="hidden_SP">異なるビジネスラインで<br class="hidden_SP">「意識の共有」を試みる。
+            p.body.wow.fadeInUp(data-wow-delay='0.8s') 世の中のトレンドを考えると、例えば、鉄鋼業などトラディショナルな業界でも、データ分析を始めとした革新の時期にあります。イノベーションは、IT企業やテクノロジー関連企業だけのものではなく、急な変化がいつどこで起きても不思議ではない時代です。だからこそ、総合商社である当社は6つある部門間の連携をより強固にして、モノ視点ではなく、バリューチェーンや産業毎に新たなビジネスチャンスを捉えていく必要があります。
+            p.body.wow.fadeInUp(data-wow-delay='1.0s') しかしながら、社内の各ビジネスラインは足元ではそれぞれ異なるビジネス上の課題があり、中長期的な課題解決に向けた取り組みについては重要性に理解を示しつつも、リソース不足などを理由に前に進められないことも少なくありません。そのため組織間連携に取り組み始めた5年前は、社内を説得するために様々な試行錯誤が必要でした。今では、全社として組織間連携の必要性を社内外に発信し、連携強化のための機構改編も実行するなど、会社の本気度や期待も大きく変わってきているように感じます。
+            p.body.wow.fadeInUp(data-wow-delay='1.2s') また、急速に進歩する技術が業界構造を劇的に変化させる今日においては、既存の枠に囚われず、スタートアップ企業への投資も有効活用しながら、新技術や新しい事業モデル、経営のイノベーションを取り込んでいくことが必要です。スタートアップ企業への投資は、当社にとってメリットがあるだけではありません。スタートアップ企業は多くの可能性を持っていますが、資金やネットワークなどのリソースが限られているという実態があります。そのため、彼らにとっても、世界中にネットワークを持ち、様々なビジネスを展開している当社とパートナーシップを組むメリットがあるのです。今の自分には自由に動き回り自由に発想することが求められており、これこそが自分が追い求めていたクリエイティブな仕事だと思っています。まだまだ手探り状態ではありますが、この大変革の時代に、最先端の街で多くの刺激を受けながら、自分自身も更に成長していきたいですね。
+
+    //- 自己紹介
+    .resident-Profile_Wrapper
+      .resident-Profile
+        .resident-Profile_Inner
+          .resident-Profile_Img_Wrapper.wow.fadeIn(data-wow-delay='0.2s')
+            img(src='../assets/img/resident/01/resident-profile_min.jpg', alt=`${resident} ${nakamura}`)
+          .resident-Profile_Txt_Wrapper
+            h3.name.wow.fadeInUp(data-wow-delay='0.4s') #{nakamura}
+            p.position.wow.fadeInUp(data-wow-delay='0.6s')  #{nakamura_position1} #{nakamura_position2}
+            p.body.wow.fadeInUp(data-wow-delay='0.8s') 大学卒業後メガバンクに入社。その後、2006年住友商事に入社。入社後は鋼管本部の事業開発チームで新規事業投資などを経験。海外トレーニーを経て、2012年に駐在員として渡米し、現在はシリコンバレーを拠点に部門横断的な事業開発を推進。
+
+    //- リンク
+    .resident-Link_Wrapper
+      .resident-Link
+        .resident-Link_Inner.resident-01.wow.fadeInUp(data-wow-delay='0.2s')
+          a.resident-Link_Txt_Wrapper(href='02.html')
+            h3.title.font-Noto.wow.fadeInUp(data-wow-delay='0.4s') 全ての原点であるチュニジアの地で、<br class="hidden_SP">想いを形にする。
+            p.position.wow.fadeInUp(data-wow-delay='0.6s') #{oomori_position1} #{oomori_position2}
+            p.body.wow.fadeInUp(data-wow-delay='0.8s') #{oomori}
+            img.arrow(src="../assets/img/common/arrow_white.svg", alt="arrow")
+            include /_includes/_st_arrow_white

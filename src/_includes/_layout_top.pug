@@ -1,0 +1,32 @@
+include /_includes/_variables
+
+block variables
+doctype html
+html(lang=lang)
+  head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# " + pageOgpType + ": http://ogp.me/ns/" + pageOgpType + "#")
+    include /_includes/_meta
+    block meta
+      +meta('../')
+
+  body
+    include /_includes/_header
+    block header
+      +header('../')
+
+    block content
+
+    include /_includes/_footer
+    block footer
+      +footer('../')
+
+    include /_includes/_sp_nav
+    block sp_nav
+      +sp_nav('../')
+
+    include /_includes/_st_page_top
+    block page_top
+      +page_top('../')
+
+    include /_includes/_script
+    block script
+      +script('../')

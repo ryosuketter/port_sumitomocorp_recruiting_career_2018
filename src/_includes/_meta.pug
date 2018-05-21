@@ -1,0 +1,63 @@
+mixin meta(path)
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible" content="IE=edge")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+  meta(name="format-detection" content="telephone=no,email=no,address=no")
+  meta(name="description" content=pageDescription)
+  meta(name="keywords" content=pageKeywords)
+
+  //- OGP
+  meta(property="og:title" content=pageOgpTitle)
+  meta(property="og:type" content=pageOgpType)
+  meta(property="og:image" content="http://sumitomocorp-career.com/assets/img/ogp.png")
+  meta(property="og:description" content=pageDescription)
+  meta(property="og:url" content="http://sumitomocorp-career.com/" + pageUrl)
+  meta(property="og:site_name" content="キャリア採用｜住友商事株式会社")
+  meta(property="og:locale" content="ja")
+  //- meta(property="og:image" content=pageOgpImage)個別に対応せず、全部同じでOKなので
+
+  //- OGP Facebook insights
+  //- meta(property="fb:admins" content="")情報を貰えば設定できる
+  //- meta(property="fb:app_id" content="")情報を貰えば設定できる
+  //- /OGP Facebook insights
+
+  //- OGP Twitter Cards
+  meta(name="twitter:card" content="summary_large_image")
+  meta(name="twitter:title" content=pageOgpTitle)
+  meta(name="twitter:description" content=pageDescription)
+  meta(name="twitter:image" content="http://sumitomocorp-career.com/assets/img/ogp.png")
+  //- meta(name="twitter:site" content="@")これは任意
+  //- /OGP Twitter Cards
+
+  //- /OGP
+
+  //- /ICON
+  //- https://qiita.com/ayumisuzuki/items/5c976dc02a9aec906bf1
+  //- /ICON - iOSのホームスクリーン用
+  link(rel="apple-touch-icon" sizes="57x57" href=path + "assets/img/icon/apple-touch-icon-57x57.png")
+  link(rel="apple-touch-icon" sizes="60x60" href=path + "assets/img/icon/apple-touch-icon-60x60.png")
+  link(rel="apple-touch-icon" sizes="72x72" href=path + "assets/img/icon/apple-touch-icon-72x72.png")
+  link(rel="apple-touch-icon" sizes="76x76" href=path + "assets/img/icon/apple-touch-icon-76x76.png")
+  link(rel="apple-touch-icon" sizes="114x114" href=path + "assets/img/icon/apple-touch-icon-114x114.png")
+  link(rel="apple-touch-icon" sizes="120x120" href=path + "assets/img/icon/apple-touch-icon-120x120.png")
+  link(rel="apple-touch-icon" sizes="144x144" href=path + "assets/img/icon/apple-touch-icon-144x144.png")
+  link(rel="apple-touch-icon" sizes="152x152" href=path + "assets/img/icon/apple-touch-icon-152x152.png")
+  link(rel="apple-touch-icon" sizes="180x180" href=path + "assets/img/icon/apple-touch-icon-180x180.png")
+  //- /ICON - AndroidのChrome用
+  link(rel="icon" type="image/png" href=path + "assets/img/icon/android-chrome-192x192.png" sizes="192x192")
+  //- /ICON
+
+
+  block title
+    title #{pageTitle}
+    link(rel="shortcut icon", href=path + "assets/img/favicon.ico")
+
+  block css
+    //- link(href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css', rel='stylesheet')
+    //- link(rel="stylesheet" href=path + "assets/css/font-awesome.css")
+    link(rel="stylesheet" href=path + "assets/css/style.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellefair&amp;subset=hebrew,latin-ext")
+
+  block js
+    script(src=path + "assets/js/vendor.js")
+    script(src=path + "assets/js/common.js")

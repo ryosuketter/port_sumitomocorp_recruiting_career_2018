@@ -1,0 +1,140 @@
+extend _includes/_layout_top
+append variables
+  //- Required
+  - var pageTitle= "キャリア採用｜住友商事株式会社";
+  - var pageDescription= "住友商事株式会社のキャリア採用サイトです。キャリア採用者のインタビュー、対談、駐在員インタビューなどキャリア採用に関する情報をご紹介します。";
+  - var pageKeywords= "住友商事株式会社,キャリア採用";
+  //- Optional
+  - var pageOgpTitle= "キャリア採用｜住友商事株式会社";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "website";
+  //- Not modified
+  - var pageUrl= "index.html";
+  - var classname_mv = "Top";
+
+block meta
+  +meta('')
+
+  //- TOPページだけ ローディング用
+  append css
+    link(rel="stylesheet" href="assets/css/top_mv_loading.css")
+
+block content
+  //- contents
+
+  //- mv
+  .top-Mv_Wrapper
+    .top-Mv
+      .top-Mv_Inner
+        .top-Mv_Txt_Wrapper
+          h2.title.font-Roboto.top-Mv_Txt_Wrapper_Title CAREER<br class="show_SP"> RECRUITING
+          p.sub-Title.top-Mv_Txt_Wrapper_sub_Title SUMITOMO CORPORATION<br class="show_SP"> CAREER RECRUITMENT
+    include /_includes/_st_mv_grid
+
+  include /_includes/_bg_cube_grid
+    //- message
+    .top-Message_Wrapper
+      .top-Message
+        .top-Message_Inner
+          img.js-img_scroll_fade_in(src='./assets/img/top/top-message_min.jpg', alt=`${message}`)
+          .top-Fade_In.Img01.js-img_scroll_fade_in
+          .top-Message_Box.js-img_scroll_fade_in
+            a(href='message/')
+              .top-Message_Box_Body
+                h3.title.font-Noto #{message}
+                p.body 住友商事では、さまざまなバックグラウンドを持ったキャリア採用の社員が活躍しています。当社キャリア採用に興味を持ってくださる皆さんに向けて採用チームからのメッセージです。
+                .top-Message_Box_Readmore
+                  p READ MORE
+                    img.arrow(src="./assets/img/common/arrow_white.svg", alt="arrow")
+                    include /_includes/_st_arrow_white
+
+    //- 個人インタビュー（person）
+    .top-Person_Wrapper#top-Person_Wrapper
+      .top-Person
+        .top-Person_Inner
+          .top-Person_Txt_Wrapper.js-img_scroll_fade_in
+            h3.title.font-Noto キャリア採用<br class="show_SP"> #{person}
+            p.body 住友商事で活躍しているキャリア採用者のインタビューです。住友商事に転職した理由や専門性を活かして住友商事で働く魅力、今後のキャリアプランについてご紹介します。
+          .top-Person_Img_Wrapper
+            .top-Person_Img_Detail_Wrapper
+              a.js-img_scroll_fade_in(href='person/01.html')
+                img(src='./assets/img/top/top-person_01_min.jpg', alt='インタビュー')
+                .top-Fade_In.Img02.js-img_scroll_fade_in
+                .top-Person_Img_Detail_Box.js-img_scroll_fade_in
+                  p.title #{suzuki}
+                  p.body #{suzuki_position1}<br>#{suzuki_position2}
+                    img.arrow(src="./assets/img/common/arrow_light_blue.svg", alt="arrow")
+                    include /_includes/_st_arrow_green
+            .top-Person_Img_Detail_Wrapper
+              a.js-img_scroll_fade_in(href='person/02.html')
+                img(src='./assets/img/top/top-person_02_min.jpg', alt='インタビュー')
+                .top-Fade_In.Img03.js-img_scroll_fade_in
+                .top-Person_Img_Detail_Box.js-img_scroll_fade_in
+                  p.title #{ebukuro}
+                  p.body #{ebukuro_position}
+                    img.arrow(src="./assets/img/common/arrow_light_blue.svg", alt="arrow")
+                    include /_includes/_st_arrow_green
+
+    //- 対談（talk）
+    .top-Talk_Wrapper
+      .top-Talk
+        .top-Talk_Inner
+          .top-Talk_Img_Wrapper
+            .top-Talk_Img_Detail_Wrapper
+              img.js-img_scroll_fade_in(src='./assets/img/top/top-talk_min.jpg', alt='対談：キャリア入社×新卒入社')
+              .top-Fade_In.Img04.js-img_scroll_fade_in
+              .top-Talk_Img_Detail_Box.js-img_scroll_fade_in
+                a(href='talk/01.html')
+                  p.title.font-Noto #{talk}：キャリア入社×新卒入社
+                  p.body 同じ部署で働いているキャリア入社と新卒入社の社員の対談です。一緒に取り組んでいるプロジェクトの話から、それぞれの視点から見るキャリア形成の考え方までご紹介します。
+                  .top-Talk_Box_Readmore
+                    p READ MORE
+                      img.arrow(src="./assets/img/common/arrow_light_blue.svg", alt="arrow")
+                      include /_includes/_st_arrow_green
+
+    //- 駐在員（resident）
+    .top-Resident_Wrapper#top-Resident_Wrapper
+      .top-Resident
+        .top-Resident_Inner
+          .top-Resident_Box.box-01.js-img_scroll_fade_in
+            .top-Resident_Txt
+              h3.title.font-Noto キャリア採用<br>#{resident}
+              p.body 海外に駐在している社員のインタビューです。海外でどのようなプロジェクトに取り組んでいるか、グローバルでどのように活躍しているかを現地の写真と共にご紹介します。
+          .top-Resident_Box.box-02
+            .top-Resident_Box_Detail.box-Detail_01.wow.fadeIn(data-wow-delay='0.1s')
+              a.js-img_scroll_fade_in(href='resident/01.html')
+                img(src='./assets/img/top/top-resident_01_min.jpg', alt=`キャリア採用 ${resident} ${nakamura}`)
+                .top-Fade_In.Img05.js-img_scroll_fade_in
+                .top-Resident_Box_Detail.js-img_scroll_fade_in
+                  p.name #{nakamura}
+                  p.position #{nakamura_position1} 米<br class="show_SP">
+                    span  州事業開発グループ
+                    img.arrow(src="./assets/img/common/arrow_light_blue.svg", alt="arrow")
+                    include /_includes/_st_arrow_green
+            .top-Resident_Box_Detail.box-Detail_02.wow.fadeIn(data-wow-delay='0.1s')
+              a.js-img_scroll_fade_in(href='resident/02.html')
+                img(src='./assets/img/top/top-resident_02_min.jpg', alt=`キャリア採用 ${resident} ${oomori}`)
+                .top-Fade_In.Img06.js-img_scroll_fade_in
+                .top-Resident_Box_Detail.js-img_scroll_fade_in
+                  p.name #{oomori}
+                  p.position #{oomori_position1}<br class="show_SP">#{oomori_position2}
+                    img.arrow(src="./assets/img/common/arrow_light_blue.svg", alt="arrow")
+                    include /_includes/_st_arrow_green
+
+    //- loading
+
+  include /_includes/_loading
+
+  //- /contents
+
+block footer
+  +footer('')
+
+block sp_nav
+  +sp_nav('')
+
+block page_top
+  +page_top('')
+
+block script
+  +script('')

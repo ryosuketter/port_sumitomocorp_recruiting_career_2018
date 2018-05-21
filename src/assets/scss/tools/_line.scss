@@ -1,0 +1,24 @@
+.show_SP {
+  display: none;
+}
+.hidden_SP {
+  display: block;
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .show_SP {
+    display: none;
+  }
+  .hidden_SP {
+    display: block;
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .show_SP {
+    display: block;
+  }
+  .hidden_SP {
+    display: none;
+  }
+}

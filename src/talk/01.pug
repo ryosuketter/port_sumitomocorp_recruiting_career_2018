@@ -1,0 +1,175 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= `${talk}｜住友商事株式会社`;
+  - var pageDescription= "キャリア採用で入社した社員が日々どんなやりがいを持って働いているか紹介します。";
+  - var pageKeywords= `住友商事株式会社,${talk}`;
+  //- Optional
+  - var pageOgpTitle= pageTitle;
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "talk/01.html";
+  - var classname_mv = "Underlayer";
+
+block content
+  //- contents
+
+  //- MV
+  .talk-Mv_Wrapper
+    .talk-Mv
+      .talk-Mv_Inner
+        .talk-Txt_Inner
+          p.sub-Title.font-Noto.st-Title_Fade_In_01 #{talk}：キャリア入社 × 新卒入社
+          h2.title.font-Noto.st-Title_Fade_In_02 「豊かさと夢」の実現を目指して。<br class="hidden_SP">住友商事における「キャリア」を考える。
+          .talk-Tnterlocutors_Wrapper
+            .talk-Tnterlocutor_Wrapper
+              p.position.st-Title_Fade_In_03 #{talker_position}
+              p.name.st-Title_Fade_In_04 #{talker_sakamoto}
+               span.employment-Status （キャリア入社）
+            .talk-Tnterlocutor_Wrapper
+              p.position.st-Title_Fade_In_05 #{talker_position}
+              p.name.st-Title_Fade_In_06 #{talker_takeda}
+               span.employment-Status （新卒入社）
+    include /_includes/_st_mv_grid
+
+  include /_includes/_bg_cube_grid
+    //- コンテンツ1
+    .talk-Contents_01_Wrapper
+      .talk-Contents_01
+        .talk-Contents_01_Inner
+          .talk-Contents_01_Img_Wrapper.wow.fadeIn(data-wow-delay='0.2s')
+            img(src='../assets/img/talk/01/talk-contents_01_min.jpg', alt='対談の様子')
+          .talk-Contents_01_Txt_Wrapper.wow.fadeInUp(data-wow-delay='0.4s')
+            .talk-Contents_01_Txt_Inner
+              h3.title.font-Noto.wow.fadeInUp(data-wow-delay='0.6s') これまでのキャリアを振り返る。2人の出会いは遠く離れた<br class="hidden_SP">マダガスカルの地。
+              .talk-Contents_Talk_Wrapper
+                .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.8s')
+                  p.speaker #{talker_takeda_ln}
+                  p.contents 私は、新卒入社時に人事の海外チームに配属となり、海外駐在員の処遇や福利厚生を担当しました。その後、トレーニー生としてニューヨークに1年半駐在した後、東京で人事異動の業務を担当し、2013年からニッケル新金属事業部に異動し3年間マダガスカルへの駐在を経験しました。就職活動時は、海外で大きいことを成し遂げたいという漠然としたイメージはありつつも、それほど強い拘りをもって就職活動を行ったわけではなく、正直なところ他商社との明確な違いもよく分からないまま(笑)、住友商事が一番自然体で楽しく面接に臨めたという理由で入社を決めました。
+                .talk-Component_Row.wow.fadeInUp(data-wow-delay='1s')
+                  p.speaker #{talker_sakamoto_ln}
+                  p.contents 20年程前になりますが、私も新卒で別の総合商社に入社しました。就職活動時は、理工学部出身ということもありメーカーの技術職を中心に考えたのですが、自分の肌には合いそうにないなと感じ、知り合いが働いていたことがきっかけとなり総合商社に興味を持ちました。私も漠然と海外への憧れがあり、早いタイミングで駐在したいと思っていたので総合商社を選びました。その後所属していた部署が分社化され、そのまま専門商社へ転籍することになりましたが、念願叶って社会人7年目で香港駐在の機会に恵まれ、若いからこその貪欲さで目の前の仕事に取り組みました。それまでニッケルやコバルトなどの非鉄トレードや中国でのJV業務に携わりましたが、金額規模もプロジェクトの規模感も異なる鉱山投資ビジネスに興味を持ち、2008年に住友商事に入社を決め、現在に至ります。会社は変わりましたが一貫してニッケルのビジネスに携わっています。
+
+    //- コンテンツ2
+    .talk-Contents_02_Wrapper
+      .talk-Contents_02
+        .talk-Contents_02_Inner
+          .talk-Contents_02_01_Img_Wrapper.wow.fadeIn(data-wow-delay='0.2s')
+            img(src='../assets/img/talk/01/talk-contents_02_01_min.jpg', alt='対談の様子')
+          .talk-Contents_02_Txt_Wrapper
+            .talk-Contents_02_Txt_Inner
+              .talk-Contents_Talk_Wrapper
+                .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.5s')
+                  p.speaker #{talker_takeda_ln}
+                  p.contents 酒本さんと初めてお会いしたのはマダガスカルでしたね。酒本さんがマダガスカル駐在中に、私が異動後の初出張で現地に伺いました。アフリカを訪れたのは初めてで、見るものすべてが新鮮であると同時に、厳しい環境下にありながらも第一線で働かれている酒本さんの姿が印象的でした。そして、ご自宅に招いていただき、もてなしていただいたのも良い思い出です。
+                .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.6s')
+                  p.speaker #{talker_sakamoto_ln}
+                  p.contents マダガスカルは娯楽が少ないですからね。楽しみといえば、どうしてもお酒になります（笑）。
+                .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.7s')
+                  p.speaker #{talker_takeda_ln}
+                  p.contents お酒を片手に延々と議論しましたね。駐在員生活のことからアフリカマーケットの成長性についてまで。
+                .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.8s')
+                  p.speaker #{talker_sakamoto_ln}
+                  p.contents そうでしたね。投資に積極的な国もありますが技術自体は現地に移転しようとしない。他方、日本のビジネスモデルは、その国を潤わせて環境も守りながら自社の利益につなげていきます。そうした社会貢献を念頭に置いたビジネスモデルは今後も追求していくべきだと思いますし、それが日本のビジネスモデルの優位性だと感じています。
+          .talk-Contents_02_02_Img_Wrapper.wow.fadeIn(data-wow-delay='0.4s')
+            img(src='../assets/img/talk/01/talk-contents_02_02_min.jpg', alt='街並み')
+
+    //- コンテンツ3
+    .talk-Contents_03_Wrapper
+      .talk-Contents_03
+        .talk-Contents_03_Inner
+          h3.title.font-Noto.wow.fadeInUp(data-wow-delay='0.2s') 「住友」の看板を背負って、途上国に行く面白さ。<br class="hidden_SP">後発組だからこそ模索して掴んだビジネスチャンス。
+          .talk-Contents_Talk_Wrapper
+            .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.3s')
+              p.speaker #{talker_takeda_ln}
+              p.contents 私はマダガスカル駐在時、アンバトビープロジェクトのサステナビリティを推進する部署に所属し、地域社会や環境と共生するための仕事に携わっていました。そのため、大使館や政府機関関係者などと発展途上国の開発の在り方について会話する機会が多くありました。彼らも途上国のために意義ある支援をしたいという強い使命感がある一方で、彼らのプロジェクトは期間が決まっており、期間が終了すると支援自体も終了してしまい、継続的な発展に必ずしも寄与しないということに課題意識を持っていました。総合商社の場合は、利益が期待できないと投資すらできませんが、ビジネスとして成立するからこそ周囲から必要とされ、その国を持続的に発展させられる仕組みづくりができるのは強みだと思います。
+            .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.4s')
+              p.speaker #{talker_sakamoto_ln}
+              p.contents そう思います。また、そうした様々な分野で活躍されている方々と本音で語り合えるのも、住友商事という看板があるからこそですね。
+            .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.5s')
+              p.speaker #{talker_takeda_ln}
+              p.contents このアンバトビープロジェクトはカナダや韓国との合弁事業ですが、マダガスカルの外貨収入の３割を稼いでいる計算ですので、国家事業とも言えますよね。昨年発行された2万マダガスカル・アリアリ札に描かれているプラントは我々のプロジェクトの絵です。実際にお札を手にしたときは、歴史に残る仕事に仲間と共に携われたことの喜びを実感しました。酒本さんはどう感じられましたか。
+            .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.6s')
+              p.speaker #{talker_sakamoto_ln}
+              p.contents それはもちろん嬉しいですよ。現地の人々に必要とされ、国の発展に貢献出来るようなビジネスに携われることは総合商社の醍醐味だと思います。それと同時に仕事の重みも感じます。現地社員約7千人を雇用し、またサプライチェーンでみると取引先の仕事や雇用にも密接に関係しており、現地の人々の生活に大きなインパクトがあるからです。このプロジェクトは今後30年続くので、自分たちがしっかりと土台をつくっていきたいですね。
+            .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.7s')
+              p.speaker #{talker_takeda_ln}
+              p.contents 住友商事における資源ビジネスの特徴をどのように考えていますか。
+            .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.8s')
+              p.speaker #{talker_sakamoto_ln}
+              p.contents 資源の中でもニッケルという鉱物をこの規模で取り扱っている総合商社はないですね。当社は資源ビジネスでは比較的後発組と言われますが、経験が少ない中でマダガスカルという日本から遠く離れた国に投資しここまでのビジネスに成長させたわけで、正に当社が大切にしている「熱心な素人は玄人に優る」という精神あってのことと思います。
+            .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.9s')
+              p.speaker #{talker_takeda_ln}
+              p.contents もう一つ資源の大きな投資で言えばボリビアのサンクリストバル鉱山がありますが、進出しているのは住友商事だけですよね。「住友商事は橋を叩いても渡らない」と言われることもありますが、資源ビジネスでは発展途上国でも積極的にリスクを取りハンズオンでプロジェクトを展開しており、住友商事が一番尖っているのではないかと思います。この点は、かなり世間のイメージとは異なるかもしれませんね。
+
+    //- コンテンツ4
+    .talk-Contents_04_Wrapper
+      .talk-Contents_04
+        .talk-Contents_04_Inner
+          .talk-Contents_04_Img_Wrapper.wow.fadeIn(data-wow-delay='0.2s')
+            img(src='../assets/img/talk/01/talk-contents_05_min.jpg', alt='対談の様子')
+          .talk-Contents_04_Txt_Wrapper.wow.fadeInUp(data-wow-delay='0.4s')
+            .talk-Contents_04_Txt_Inner
+              h3.title.font-Noto.wow.fadeInUp(data-wow-delay='0.6s') 「エキスパート」と「ゼネラリスト」の共存。経験を生かして、どのようなキャリアを形成するか。
+              .talk-Contents_Talk_Wrapper
+                .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.8s')
+                  p.speaker #{talker_sakamoto_ln}
+                  p.contents マダガスカルで出会った外国人の大部分は、そのプロジェクトのためだけに駐在し、キャリアを積んで次にステップアップしていくというケースを多く目にしました。日本以外の国では「キャリアを積むために何をすべきか」という観点で自ら人生設計している人が非常に多いです。キャリアアップと同時に給与水準も上がっていくわけです。外国人が「入りたい」と思うような制度面での仕組みづくりが、会社の競争力や継続性に繋がるように思います。
+
+    //- コンテンツ5
+    .talk-Contents_05_Wrapper
+      .talk-Contents_05
+        .talk-Contents_05_Inner
+          .talk-Contents_05_Img_Wrapper.wow.fadeIn(data-wow-delay='0.2s')
+            img(src='../assets/img/talk/01/talk-contents_04_min.jpg', alt='対談の様子')
+          .talk-Contents_05_Txt_Wrapper
+            .talk-Contents_05_Txt_Inner
+              .talk-Contents_Talk_Wrapper
+                .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.4s')
+                  p.speaker #{talker_takeda_ln}
+                  p.contents そうした意味では、酒本さんは非常に資源分野での専門性が高いですよね。エキスパートとして非常に尊敬しています。我々新卒入社の社員は様々なローテーションを経てどちらかというとゼネラリストとして育ってきていますので、そうした特定分野での専門性は我々に欠けている部分かもしれません。
+                .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.5s')
+                  p.speaker #{talker_sakamoto_ln}
+                  p.contents 良し悪しではなく、別の会社とパートナーになる時に、何を「強み」として見せるかの違いかなと思います。「もう20年間ニッケルビジネスに携わっています」と伝えれば、相手は何となく安心してくれるかもしれません。一方で、事業経営をする中では、ある意味素人としての目線は重要で「あれ？」と思うことを一つずつ潰せないと事業はうまくいきません。専門家ではなく、様々な経験をしている人だからこそ見えてくる課題もあるでしょうし、変に狭いところに議論が行かずに幅広くポイントを捉えられるように思います。
+                .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.6s')
+                  p.speaker #{talker_takeda_ln}
+                  p.contents 確かに、広い視野で経営ができる人も必要ですからね。そういう意味では、ゼネラリストとエキスパートがお互い補完し合ってビジネスが成立しているということなのでしょう。
+                .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.7s')
+                  p.speaker #{talker_sakamoto_ln}
+                  p.contents 今の中途採用は専門性で募集をかけていると思いますが、「プロ経営者」となれるようなゼネラリストを募るのも面白いですよね。
+
+    //- コンテンツ6
+    .talk-Contents_06_Wrapper
+      .talk-Contents_06
+        .talk-Contents_06_Inner
+          .talk-Contents_06_Img_Wrapper.wow.fadeIn(data-wow-delay='0.2s')
+            img(src='../assets/img/talk/01/talk-contents_06_min.jpg', alt='対談の様子')
+          .talk-Contents_06_Txt_Wrapper.wow.fadeInUp(data-wow-delay='0.4s')
+            .talk-Contents_06_Txt_Inner
+              .talk-Contents_Talk_Wrapper
+                .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.6s')
+                  p.speaker #{talker_takeda_ln}
+                  p.contents 経営者を育てるための経験という観点でお話しすると、住友商事に限らず、総合商社は「修羅場体験」をさせますね。我々の部では、これまでも海外の独立法人に派遣していましたが、今後は海外の事業会社の前線に飛び込んで勝負させる機会を更に増やしていくのでしょうね。
+                .talk-Component_Row.wow.fadeInUp(data-wow-delay='0.8s')
+                  p.speaker #{talker_sakamoto_ln}
+                  p.contents 経験は座学よりも人間を成長させます。同じところにずっと留まるからこそ得られることもありますが、それを飛び越えて全く違うところで柔軟性を養うことも必要です。キャリア採用、新卒採用に限らず様々なバックグラウンドの社員が多様性を発揮できる組織づくりが今後はより重要になると思います。
+
+    //- 自己紹介
+    .talk-Profile_Wrapper
+      .talk-Profile
+        .talk-Profile_Inner
+          .talk-Profile_Detail
+            .talk-Profile_Img_Wrapper.wow.fadeIn(data-wow-delay='0.2s')
+              img(src='../assets/img/talk/01/talk-profile_01_min.jpg', alt=`${talker_sakamoto}`)
+            .talk-Profile_Txt_Wrapper
+              h3.name.wow.fadeInUp(data-wow-delay='0.3s') #{talker_sakamoto}
+              p.position.wow.fadeInUp(data-wow-delay='0.4s') #{talker_position}
+              p.body.wow.fadeInUp(data-wow-delay='0.5s') 大学卒業後、総合商社に入社。一貫してニッケルやコバルトなどの非鉄トレードに携わり香港駐在も経験する中で、鉱山投資ビジネスに興味をもち、2008年に住友商事に入社。入社後はアンバトビープロジェクトに携わり、マダガスカル駐在を経て現在に至る。
+          .talk-Profile_Detail
+            .talk-Profile_Img_Wrapper.wow.fadeIn(data-wow-delay='0.6s')
+              img(src='../assets/img/talk/01/talk-profile_02_min.jpg', alt=`${talker_takeda}`)
+            .talk-Profile_Txt_Wrapper
+              h3.name.wow.fadeInUp(data-wow-delay='0.7s') #{talker_takeda}
+              p.position.wow.fadeInUp(data-wow-delay='0.8s') #{talker_position}
+              p.body.wow.fadeInUp(data-wow-delay='0.9s') 2006年住友商事に新卒入社。初期配属は人事部。その後トレーニー生としてニューヨークに駐在。2013年に現在の部署に異動し、3年間のマダガスカル駐在を経験後、現在は東京側でアンバトビープロジェクトを推進。

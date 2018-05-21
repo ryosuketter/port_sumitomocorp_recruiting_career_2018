@@ -1,0 +1,222 @@
+// 役割をわかりやすくするために、ヘッダー・フッターのコンポーネントにはst-をプレフィックスにつける（p142）
+
+// st-header
+header {
+  .st-Header_All_Wrapper {
+    position: absolute;
+    top: 0;
+
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: $Z_HEADER_PC;
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: #ffffff;
+    }
+  }
+}
+
+.st-Header_Logo_Wrapper {
+  .st-Header_Logo {
+    padding-left: 40px;
+    padding-top: 40px;
+
+    img {
+      //a
+    }
+  }
+}
+
+.st-Header_Menu_Wrapper {
+  .st-Header_Menu {
+    margin-right: 15px;
+    ul {
+      display: flex;
+      li {
+        @include max-screen(1100px) {
+          margin-right: 20px;
+        }
+        margin-right: 40px;
+        padding-top: 50px;
+
+        a {
+          position: relative;
+
+          font-size: 14px;
+
+          &:after {
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+
+            background: #ffffff;
+            content: "";
+            height: 1px;
+            transform: scale(0, 1);
+            transform-origin: left top;
+            transition: transform 0.3s;
+            width: 100%;
+          }
+          &:hover {
+            &:after {
+              transform: scale(1, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  header {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    z-index: $Z_HEADER_TABLET;
+
+    .st-Header_All_Wrapper {
+      position: absolute;
+      top: 0;
+
+      display: block;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .st-Header_Logo_Wrapper {
+    transition: 0.3s;
+
+    .st-Header_Logo {
+      padding-left: 25px;
+      padding-top: 30px;
+
+      img {
+        width: 105px;
+      }
+    }
+
+    &.clicked {
+      opacity: 0;
+    }
+
+    &.hidden {
+      opacity: 0;
+    }
+  }
+
+  .st-Header_Menu_Wrapper {
+    padding-right: 24px;
+    padding-top: 31px;
+
+    .st-Header_Menu {
+      display: none;
+    }
+
+    .st-Header_Sp_Menu_Wrapper {
+      cursor: pointer;
+
+      .st-Header_Sp_Menu {
+        position: relative;
+
+        height: 13px;
+        width: 30px;
+
+        span {
+          background-color: #ffffff;
+          display: block;
+          height: 1px;
+          width: 100%;
+
+
+          &.top {
+            position: absolute;
+
+            animation: nav_Btm_Top_Start;
+            animation-delay: 0.1s;
+            animation-duration: 0.6s;
+            animation-fill-mode: both;
+          }
+
+          &.mid {
+            position: absolute;
+            top: 6px;
+
+            animation: nav_Btm_Mid_Start;
+            animation-delay: 0.2s;
+            animation-duration: 0.6s;
+            animation-fill-mode: both;
+          }
+
+          &.btm {
+            position: absolute;
+
+            animation: nav_Btm_Btm_Start;
+            animation-delay: 0.3s;
+            animation-duration: 0.6s;
+            animation-fill-mode: both;
+          }
+        }
+      }
+
+      &.clicked {
+        position: relative;
+
+        height: 25px;
+        z-index: $Z_NAV_BTN;
+
+        .st-Header_Sp_Menu {
+          span {
+            &.top {
+              position: absolute;
+              top: 0;
+
+              animation: nav_Btm_Top_End;
+              animation-delay: 0.2s;
+              animation-duration: 0.8s;
+              animation-fill-mode: both;
+            }
+
+            &.mid {
+              position: absolute;
+              top: 6px;
+
+              animation: nav_Btm_Mid_End;
+              animation-delay: 0s;
+              animation-duration: 0.8s;
+              animation-fill-mode: both;
+            }
+
+            &.btm {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+
+              animation: nav_Btm_Btm_End;
+              animation-delay: 0.2s;
+              animation-duration: 0.8s;
+              animation-fill-mode: both;
+            }
+          }
+        }
+      }
+    }
+  }
+}

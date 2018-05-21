@@ -1,0 +1,29 @@
+//- header
+mixin header(path)
+  header(class="st-Mv_" + classname_mv)#js-Header
+    .st-Header_All_Wrapper
+      a.st-Header_Logo_Wrapper(href=path + 'index.html')
+        h1.st-Header_Logo
+          img(src=path + 'assets/img/header/logo-min.png', alt='ロゴ')
+      .st-Header_Menu_Wrapper
+        .st-Header_Menu
+          ul
+            li.txt_link
+              a(href=path + "message/") #{message}
+            li.txt_link
+              a(href="#top-Person_Wrapper") #{person}
+            li.txt_link
+              a(href=path + "talk/01.html") #{talk}
+            li.txt_link
+              a(href="#top-Resident_Wrapper") #{resident}
+            li.btn
+              a(href=path + "career/") #{career}
+            li.btn
+              a(href="https://job.axol.jp/bw/c/sumitomocorp/job/search" target="_blank") #{job_category}
+        .st-Header_Sp_Menu_Wrapper#js-Header_Nav
+          .st-Header_Sp_Menu
+            span.top
+            span.mid
+            span.btm
+
+//- /header

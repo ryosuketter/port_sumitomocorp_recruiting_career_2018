@@ -1,0 +1,124 @@
+.resident-Profile_Wrapper {
+  .resident-Profile {
+    .resident-Profile_Inner {
+      display: flex;
+      margin: 0 auto;
+      max-width: 900px;
+      padding-bottom: 160px;
+    }
+  }
+}
+
+.resident-Profile_Img_Wrapper {
+  font-size: 0;
+}
+
+.resident-Profile_Txt_Wrapper {
+  padding: 30px 0 20px 60px;
+
+  .name {
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .position {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 26px;
+  }
+
+  .body {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 2;
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .resident-Profile_Wrapper {
+    .resident-Profile {
+      padding: 0 25px;
+      .resident-Profile_Inner {
+        display: flex;
+        margin: 0 auto;
+        max-width: 100%;
+        padding-bottom: 60px;
+      }
+    }
+  }
+
+  .resident-Profile_Img_Wrapper {
+    font-size: 0;
+  }
+
+  .resident-Profile_Txt_Wrapper {
+    padding: 20px;
+    padding-right: 0;
+
+    .name {
+      font-size: 19px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .position {
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    .body {
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 2;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .resident-Profile_Wrapper {
+    .resident-Profile {
+      padding: 0 25px;
+      .resident-Profile_Inner {
+        display: flex;
+        margin: 0 auto;
+        max-width: 100%;
+        padding-bottom: 28px;
+      }
+    }
+  }
+
+  .resident-Profile_Img_Wrapper {
+    font-size: 0;
+    margin-right: -18px;
+
+    img {
+      height: 140px;
+      width: 140px;
+    }
+  }
+
+  .resident-Profile_Txt_Wrapper {
+    padding: 0;
+    padding-top: 32px;
+
+    .name {
+      font-size: 16px;
+      letter-spacing: 1px;
+      margin-bottom: 3px;
+    }
+
+    .position {
+      font-size: 10px;
+      letter-spacing: 1px;
+      margin-bottom: 9px;
+    }
+
+    .body {
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 2;
+    }
+  }
+}

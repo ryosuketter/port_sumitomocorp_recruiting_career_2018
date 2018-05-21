@@ -1,0 +1,58 @@
+.talk-Contents_03_Wrapper {
+  .talk-Contents_03 {
+    background: url("../img/talk/01/talk-contents_03_bg_min.jpg")bottom 0 center /cover no-repeat;
+    .talk-Contents_03_Inner {
+      color: #ffffff;
+      margin: 0 auto;
+      max-width: 970px;
+      padding: 140px 40px 113px;
+
+      .title {
+        font-size: 34px;
+        line-height: 1.5;
+        margin-bottom: 26px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .talk-Contents_03_Wrapper {
+    .talk-Contents_03 {
+      background: url("../img/talk/01/talk-contents_03_bg_min.jpg")bottom 0 center /cover no-repeat;
+      .talk-Contents_03_Inner {
+        color: #ffffff;
+        margin: 0 auto;
+        max-width: 970px;
+        padding: 80px 40px;
+
+        .title {
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 1.5;
+          margin-bottom: 26px;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .talk-Contents_03_Wrapper {
+    .talk-Contents_03 {
+      background: url("../img/talk/01/talk-contents_03_bg_sp_min.jpg")bottom 0 center /cover no-repeat;
+      .talk-Contents_03_Inner {
+        color: #ffffff;
+        margin: 0 auto;
+        max-width: 970px;
+        padding: 34px 22px 30px;
+
+        .title {
+          font-size: 19px;
+          line-height: 1.5;
+          margin-bottom: 21px;
+        }
+      }
+    }
+  }
+}

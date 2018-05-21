@@ -1,0 +1,416 @@
+.top-Person_Wrapper {
+  .top-Person {
+    background-color: #e4e7ea;
+    padding-bottom: 343px;
+
+    .top-Person_Inner {
+      position: relative;
+
+      background: url("../img/top/top-person_bg_light_min.jpg")bottom 0 center /cover no-repeat;
+      height: 640px;
+    }
+  }
+}
+
+.top-Person_Txt_Wrapper {
+  color: #ffffff;
+  margin: 0 auto;
+  max-width: 700px;
+  padding-bottom: 70px;
+  padding-top: 148px;
+  text-align: center;
+
+  .title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  .body {
+    font-size: 14px;
+    line-height: 2.4;
+  }
+}
+
+.top-Person_Img_Wrapper {
+  display: flex;
+  justify-content: center;
+
+  .top-Person_Img_Detail_Wrapper {
+    position: relative;
+
+    a {
+      display: block;
+      font-size: 0;
+      height: 100%;
+      text-decoration: none;
+      width: 100%;
+
+      img {
+        display: none;
+      }
+
+      .top-Person_Img_Detail_Box {
+        position: absolute;
+        right: 0;
+        bottom: -56px;
+
+        background-color: #ffffff;
+        min-width: 360px;
+        padding: 48px 40px;
+
+        .title {
+          font-size: 24px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        .body {
+          font-size: 12px;
+          line-height: 1.6;
+          display: inline-block;
+
+          .arrow {
+            // display: inline-block;
+            height: 15px;
+            margin-left: 20px;
+            width: 55px;
+            display: none;
+          }
+        }
+        .st-Arrow_Wrapper {
+          display: inline-block;
+          position: absolute;
+          top: 60%;
+          right: 40px;
+          padding-left: 10px;
+        }
+      }
+      &:hover {
+        .st-Arrow_Wrapper {
+          animation: st-Arrow_Bownce 2s infinite;
+          transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+          .st-Arrow_Line {
+            animation: st-Arrow_Line 3s infinite;
+            transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          }
+          .st-Arrow_Triangle_Line.first {
+            animation: st-Arrow_Triangle_Line_f 3s infinite;
+            transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          }
+          .st-Arrow_Triangle_Line.second {
+            animation: st-Arrow_Triangle_Line_s 3s infinite;
+            transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          }
+        }
+
+        .arrow {
+          animation: arrow_hover 0.8s;
+          animation-fill-mode: both;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen(1245px) {
+  .top-Person_Wrapper {
+    .top-Person {
+      background-color: #e4e7ea;
+      padding-bottom: 195px;
+
+      .top-Person_Inner {
+        position: relative;
+
+        background: url("../img/top/top-person_bg_light_min.jpg")bottom 0 center /cover no-repeat;
+        height: 640px;
+      }
+    }
+  }
+
+  .top-Person_Txt_Wrapper {
+    color: #ffffff;
+    margin: 0 auto;
+    max-width: 700px;
+    padding-bottom: 70px;
+    padding-top: 155px;
+    text-align: center;
+
+    .title {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+    .body {
+      font-size: 14px;
+      line-height: 2.5;
+    }
+  }
+
+  .top-Person_Img_Wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0 22px;
+
+    .top-Person_Img_Detail_Wrapper {
+      position: relative;
+
+      width: 462px;
+
+      a {
+        display: block;
+        font-size: 0;
+        height: 100%;
+        text-decoration: none;
+        width: 100%;
+
+        img {
+          height: 330px;
+          margin-left: auto;
+          width: 100%;
+        }
+
+        .top-Person_Img_Detail_Box {
+          position: absolute;
+          right: 0;
+          bottom: -60px;
+
+          background-color: #ffffff;
+          min-width: 300px;
+          padding: 32px 30px;
+
+          .title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+
+          .body {
+            font-size: 12px;
+            line-height: 1.6;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .top-Person_Wrapper {
+    .top-Person {
+      background-color: #e4e7ea;
+      padding-bottom: 471px;
+
+      .top-Person_Inner {
+        position: relative;
+
+        background: url("../img/top/top-person_bg_light_min.jpg")bottom 0 center /cover no-repeat;
+        height: 640px;
+      }
+    }
+  }
+
+  .top-Person_Txt_Wrapper {
+    color: #ffffff;
+    margin: 0 auto;
+    max-width: 700px;
+    padding-bottom: 40px;
+    padding-top: 60px;
+    text-align: center;
+
+    .title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .body {
+      font-size: 14px;
+      line-height: 2;
+    }
+  }
+
+  .top-Person_Img_Wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 506px;
+    padding: 0 22px;
+
+    .top-Person_Img_Detail_Wrapper {
+      position: relative;
+
+      width: 100%;
+
+      a {
+        display: block;
+        font-size: 0;
+        height: 100%;
+        text-decoration: none;
+        width: 100%;
+
+        img {
+          display: block;
+          height: 330px;
+          width: 456px;
+        }
+
+        .top-Person_Img_Detail_Box {
+          position: absolute;
+          right: 0;
+          bottom: -60px;
+
+          background-color: #ffffff;
+          min-width: 300px;
+          padding: 32px 30px;
+
+          .title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+
+          .body {
+            font-size: 12px;
+            line-height: 1.6;
+            display: block;
+
+            .arrow {
+              display: inline-block;
+              height: 15px;
+              margin-left: 20px;
+              width: 55px;
+            }
+          }
+          .st-Arrow_Wrapper {
+            display: none;
+          }
+        }
+        &:hover {
+          .arrow {
+            animation: stop 0.8s;
+          }
+        }
+      }
+
+      &:first-child {
+        margin-bottom: 120px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  @include max-screen(435px) {
+    .top-Person_Wrapper {
+      margin-top: 75px;
+    }
+  }
+  @include max-screen(330px) {
+    .top-Person_Wrapper {
+      margin-top: 85px;
+    }
+  }
+  .top-Person_Wrapper {
+    margin-top: 50px;
+
+    .top-Person {
+      background-color: #e4e7ea;
+
+      @include max-screen(520px) {
+        padding-bottom: 250px;
+      }
+
+      padding-bottom: 260px;
+
+      .top-Person_Inner {
+        position: relative;
+
+        background: url("../img/top/top-person_bg_sp_light_min.jpg")top 0 center /cover no-repeat;
+        height: 640px;
+      }
+    }
+  }
+
+  .top-Person_Txt_Wrapper {
+    color: #ffffff;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 74px 22px 34px;
+    text-align: center;
+
+    .title {
+      font-size: 19px;
+      margin-bottom: 19px;
+      font-weight: 600;
+    }
+    .body {
+      font-size: 12px;
+      line-height: 2;
+      text-align: left;
+    }
+  }
+
+  .top-Person_Img_Wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0 22px;
+
+    .top-Person_Img_Detail_Wrapper {
+      position: relative;
+
+      max-width: 356px;
+      width: 100%;
+
+      a {
+        display: block;
+        font-size: 0;
+        height: 100%;
+        text-decoration: none;
+        width: 100%;
+
+        img {
+          // height: 210px;
+          height: 100%;
+          width: 100%;
+        }
+
+        .top-Person_Img_Detail_Box {
+          position: absolute;
+          right: 0;
+          bottom: -34px;
+
+          background-color: #ffffff;
+          min-width: 280px;
+          padding: 20px;
+
+          .title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+
+          .body {
+            font-size: 10px;
+            line-height: 1.6;
+            position: relative;
+
+            .arrow {
+              height: 12px;
+              margin-left: 20px;
+              width: 40px;
+              position: absolute;
+              right: 0;
+            }
+          }
+        }
+      }
+
+      &:first-child {
+        margin-bottom: 64px;
+      }
+    }
+  }
+}

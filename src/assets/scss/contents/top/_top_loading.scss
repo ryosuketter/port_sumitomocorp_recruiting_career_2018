@@ -1,0 +1,106 @@
+// http://tobiasahlin.com/spinkit/
+
+.top-Loading_Cube_Grid_Wrapper {
+  position: relative;
+  position: fixed;
+  top: 0;
+
+  animation: loading_hidden 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  z-index: $Z_LOADING_CUBE;
+}
+
+.top-Loading_Cube_Grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  height: 80px;
+  transform: translate(-50%, -50%);
+  width: 80px;
+
+  .top-Loading_Cube {
+    animation: loading_cube_shrink 1.3s ease-in-out;
+    animation-iteration-count: 3;
+    background-color: $Light_Blue;
+    float: left;
+    height: 33%;
+    width: 33%;
+  }
+
+  .Cube1 {
+    animation-delay: 0.2s;
+  }
+
+  .Cube2 {
+    animation-delay: 0.3s;
+  }
+
+  .Cube3 {
+    animation-delay: 0.4s;
+  }
+
+  .top-Cube4 {
+    animation-delay: 0.1s;
+  }
+
+  .Cube5 {
+    animation-delay: 0.2s;
+  }
+
+  .Cube6 {
+    animation-delay: 0.3s;
+  }
+
+  .Cube7 {
+    animation-delay: 0s;
+  }
+
+  .Cube8 {
+    animation-delay: 0.1s;
+  }
+
+  .Cube9 {
+    animation-delay: 0.2s;
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .top-Loading_Cube_Grid {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+
+    height: 80px;
+    transform: translate(-50%, -50%);
+    width: 80px;
+  }
+}
+
+@keyframes loading_cube_shrink {
+  0%, 70%, 100% {
+    transform: scale3D(1, 1, 1);
+  } 35% {
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+@keyframes loading_hidden {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    left: 0;
+
+    opacity: 0;
+  }
+  100% {
+    left: 100%;
+
+    opacity: 0;
+  }
+}

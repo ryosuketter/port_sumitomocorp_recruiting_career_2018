@@ -1,0 +1,220 @@
+.st-Arrow_Wrapper {
+  opacity: 0;
+  transition: 2s;
+
+  .st-Arrow_Inner {
+    position: relative;
+
+    height: 20px;
+    overflow: hidden;
+    width: 70px;
+  }
+
+  .st-Arrow_Line_Mask {
+    .st-Arrow_Line {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+
+      display: inline-block;
+      height: 1px;
+      width: 55px;
+
+      &.white {
+        background-color: #ffffff;
+      }
+      &.green {
+        background-color: $Arrow_Green;
+      }
+      &.black {
+        background-color: #1d2c33;
+      }
+    }
+  }
+
+  .st-Arrow_Triangle {
+    .st-Arrow_Triangle_Mask.first {
+      .st-Arrow_Triangle_Line.first {
+        position: absolute;
+        top: 5px;
+        right: 9px;
+
+        display: inline-block;
+        height: 1px;
+        transform: translate3d(0, 0, 0) rotate(30deg);
+        width: 20px;
+
+        &.white {
+          background-color: #ffffff;
+        }
+        &.green {
+          background-color: $Arrow_Green;
+        }
+        &.black {
+          background-color: #1d2c33;
+        }
+      }
+    }
+
+    .st-Arrow_Triangle_Mask.second {
+      .st-Arrow_Triangle_Line.second {
+        position: absolute;
+        top: 8px;
+        right: 20px;
+
+        display: inline-block;
+        height: 1px;
+        transform: rotate(90deg);
+        width: 15px;
+
+        &.white {
+          background-color: #ffffff;
+        }
+        &.green {
+          background-color: $Arrow_Green;
+        }
+        &.black {
+          background-color: #1d2c33;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    animation: st-Arrow_Bownce 2s infinite;
+    transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+    .st-Arrow_Line {
+      animation: st-Arrow_Line 3s infinite;
+      transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    .st-Arrow_Triangle_Line.first {
+      animation: st-Arrow_Triangle_Line_f 3s infinite;
+      transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    .st-Arrow_Triangle_Line.second {
+      animation: st-Arrow_Triangle_Line_s 3s infinite;
+      transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+  }
+
+  &.fade-In {
+    animation: st-Arrow_Bownce 2s 1.2s;
+    opacity: 1;
+
+    .st-Arrow_Line {
+      animation: st-Arrow_Line 3s 1.2s;
+      transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    .st-Arrow_Triangle_Line.first {
+      animation: st-Arrow_Triangle_Line_f 3s 1.2s;
+      transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    .st-Arrow_Triangle_Line.second {
+      animation: st-Arrow_Triangle_Line_s 3s 1.2s;
+      transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+  }
+}
+
+@keyframes st-Arrow_Line {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  10% {
+    opacity: 0;
+    transform: translate3d(50%, 0, 0);
+  }
+  20% {
+    opacity: 0;
+    transform: translate3d(-50%, 0, 0);
+  }
+  30% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate3d(5%, 0, 0);
+    width: 40px;
+  }
+  90% {
+    opacity: 1;
+    transform: translate3d(-15%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-15%, 0, 0);
+  }
+}
+
+@keyframes st-Arrow_Triangle_Line_f {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(30deg);
+  }
+  5% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(30deg);
+  }
+  20% {
+    opacity: 0;
+    transform: translate3d(34.6px, 20px, 0) rotate(30deg);
+  }
+  30% {
+    opacity: 0;
+    transform: translate3d(-34.6px, -20px, 0) rotate(30deg);
+  }
+  35% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(30deg);
+  }
+  90% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(30deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(30deg);
+  }
+}
+
+@keyframes st-Arrow_Triangle_Line_s {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(90deg);
+  }
+  10% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(90deg);
+  }
+  30% {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0) rotate(90deg);
+  }
+  40% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0) rotate(90deg);
+  }
+  45% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(90deg);
+  }
+  90% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(90deg);
+  }
+}
+
+@keyframes st-Arrow_Bownce {
+  0% {
+    transform: translate3d(-2px, -1px, 0);
+  }
+  50% {
+    transform: translate3d(2px, 0px, 0);
+  }
+  100% {
+    transform: translate3d(-2px, -1px, 0);
+  }
+}

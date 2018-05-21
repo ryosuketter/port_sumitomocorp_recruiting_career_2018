@@ -1,0 +1,216 @@
+.st-Arrow_Wrapper_Page_Top {
+  position: relative;
+  top: -25px;
+  right: 5px;
+
+  transition: 1s;
+
+  .st-Arrow_Inner {
+    position: relative;
+
+    height: 70px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 20px;
+  }
+
+  .st-Arrow_Line_Mask {
+    .st-Arrow_Line {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+
+      display: inline-block;
+      height: 55px;
+      width: 1px;
+
+      &.white {
+        background-color: #ffffff;
+      }
+      &.green {
+        background-color: $Arrow_Green;
+      }
+      &.black {
+        background-color: #1d2c33;
+      }
+    }
+  }
+
+  .st-Arrow_Triangle {
+    .st-Arrow_Triangle_Mask.first {
+      .st-Arrow_Triangle_Line.first {
+        position: absolute;
+        top: 14px;
+        right: 1px;
+
+        display: inline-block;
+        height: 1px;
+        transform: translate3d(0, 0, 0) rotate(-60deg);
+        width: 20px;
+
+        &.white {
+          background-color: #ffffff;
+        }
+        &.green {
+          background-color: $Arrow_Green;
+        }
+        &.black {
+          background-color: #1d2c33;
+        }
+      }
+    }
+
+    .st-Arrow_Triangle_Mask.second {
+      .st-Arrow_Triangle_Line.second {
+        position: absolute;
+        top: 23px;
+        right: 1px;
+
+        display: inline-block;
+        height: 1px;
+        transform: rotate(0deg);
+        width: 15px;
+
+        &.white {
+          background-color: #ffffff;
+        }
+        &.green {
+          background-color: $Arrow_Green;
+        }
+        &.black {
+          background-color: #1d2c33;
+        }
+      }
+    }
+  }
+}
+
+.st-Page_Top {
+  &:hover {
+    .st-Arrow_Wrapper_Page_Top {
+      animation: st-Arrow_Bownce_Page_Top 2s infinite;
+      transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+      .st-Arrow_Line {
+        animation: st-Arrow_Line_Page_Top 3s infinite;
+        transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      }
+      .st-Arrow_Triangle_Line.first {
+        animation: st-Arrow_Triangle_Line_f_Page_Top 3s infinite;
+        transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      }
+      .st-Arrow_Triangle_Line.second {
+        animation: st-Arrow_Triangle_Line_s_Page_Top 3s infinite;
+        transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .st-Arrow_Wrapper_Page_Top {
+    display: none;
+  }
+}
+
+@keyframes st-Arrow_Line_Page_Top {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  10% {
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
+  }
+  20% {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  30% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    height: 40px;
+    opacity: 1;
+    transform: translate3d(0, 2%, 0);
+  }
+  90% {
+    opacity: 1;
+    transform: translate3d(0, -15%, 0);
+  }
+  100% {
+    transform: translate3d(0, -15%, 0);
+  }
+}
+
+@keyframes st-Arrow_Triangle_Line_f_Page_Top {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(-60deg);
+  }
+  5% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(-60deg);
+  }
+  20% {
+    opacity: 0;
+    transform: translate3d(-20px, 34.6px, 0) rotate(-60deg);
+  }
+  30% {
+    opacity: 0;
+    transform: translate3d(20px, -34.6px, 0) rotate(-60deg);
+  }
+  35% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(-60deg);
+  }
+  90% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(-60deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(-60deg);
+  }
+}
+
+@keyframes st-Arrow_Triangle_Line_s_Page_Top {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  30% {
+    opacity: 0;
+    transform: translate3d(10px, 0, 0) rotate(0deg);
+  }
+  40% {
+    opacity: 0;
+    transform: translate3d(-10px, 0, 0) rotate(0deg);
+  }
+  45% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  90% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+
+@keyframes st-Arrow_Bownce_Page_Top {
+  0% {
+    transform: translate3d(0px, -2px, 0);
+  }
+  50% {
+    transform: translate3d(0px, 2px, 0);
+  }
+  100% {
+    transform: translate3d(0px, -2px, 0);
+  }
+}

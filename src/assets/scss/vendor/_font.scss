@@ -1,0 +1,113 @@
+// https://fonts.google.com/specimen/Bellefair?selection.family=Bellefair
+@import url(https://use.typekit.net/iyy2lkf.css);
+
+.font-Roboto {
+  font-family: "Bellefair", serif;
+  font-weight: normal;
+}
+
+// 源ノ明朝
+// DL：https://www.google.com/get/noto/#serif-jpan
+// How To Set：https://qiita.com/passionate-engineer/items/645adf95ed6f5841eaf6
+// IE対応する場合（まだしてない）：https://goo.gl/LHpKfn
+@font-face {
+  font-family: "Noto Serif Japanese";
+  font-style: normal;
+  font-weight: 100;
+  // src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-ExtraLight.otf) format("opentype");
+  src: url(../fonts/NotoSerifCJKjp_subset/NotoSerifCJKjp-ExtraLight_subset.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Serif Japanese";
+  font-style: normal;
+  font-weight: 200;
+  // src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Light.otf) format("opentype");
+  src: url(../fonts/NotoSerifCJKjp_subset/NotoSerifCJKjp-Light_subset.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Serif Japanese";
+  font-style: normal;
+  font-weight: 400;
+  // src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Regular.otf) format("opentype");
+  src: url(../fonts/NotoSerifCJKjp_subset/NotoSerifCJKjp-Regular_subset.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Serif Japanese";
+  font-style: normal;
+  font-weight: 500;
+  // src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Medium.otf) format("opentype");
+  src: url(../fonts/NotoSerifCJKjp_subset/NotoSerifCJKjp-Medium_subset.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Serif Japanese";
+  font-style: normal;
+  font-weight: 600;
+  // src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-SemiBold.otf) format("opentype");
+  src: url(../fonts/NotoSerifCJKjp_subset/NotoSerifCJKjp-SemiBold_subset.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Serif Japanese";
+  font-style: normal;
+  font-weight: 700;
+  // src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Bold.otf) format("opentype");
+  src: url(../fonts/NotoSerifCJKjp_subset/NotoSerifCJKjp-Bold_subset.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Serif Japanese";
+  font-style: normal;
+  font-weight: 900;
+  // src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Black.otf) format("opentype");
+  src: url(../fonts/NotoSerifCJKjp_subset/NotoSerifCJKjp-Black_subset.otf) format("opentype");
+}
+
+.font-Noto {
+  font-family: "Noto Serif Japanese","ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .font-Noto {
+    letter-spacing: 0;
+  }
+}
+
+// @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+// @import url(http://fonts.googleapis.com/css?family=Noto+Serif);
+// @import url(http://fonts.googleapis.com/css?family=Montserrat);
+//
+// @font-face {
+//    font-family: 'Noto Sans Japanese';
+//    font-style: normal;
+//    font-weight: 900;
+//    src: url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff2) format('woff2'),
+//         url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff) format('woff'),
+//         url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.otf) format('opentype');
+// }
+//
+// @font-face {
+//    font-family: "Noto Sans Japanese";
+//    font-style: normal;
+//    font-weight: 700;
+//    src: url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff2) format('woff2'),
+//         url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff) format('woff'),
+//         url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.otf) format('opentype');
+// }
+//
+// @font-face {
+//    font-family: "Noto Sans Japanese";
+//    font-style: normal;
+//    font-weight: 600;
+//    src: url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff2) format('woff2'),
+//         url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff) format('woff'),
+//         url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.otf) format('opentype');
+// }
+//
+// @font-face {
+//    font-family: "Noto Sans Japanese";
+//    font-style: normal;
+//    font-weight: 500;
+//    src: url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff2) format('woff2'),
+//         url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff) format('woff'),
+//         url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.otf) format('opentype');
+// }

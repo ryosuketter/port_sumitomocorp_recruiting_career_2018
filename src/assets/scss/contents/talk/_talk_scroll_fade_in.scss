@@ -1,0 +1,153 @@
+// .talk-Contents_01_Img_Wrapper,
+// .talk-Contents_01_Txt_Wrapper,
+// .talk-Contents_02_01_Img_Wrapper,
+// .talk-Contents_02_02_Img_Wrapper,
+// .talk-Contents_02_Txt_Inner,
+// .talk-Contents_03_Inner,
+// .talk-Contents_04_Img_Wrapper,
+// .talk-Contents_04_Txt_Wrapper,
+// .talk-Contents_05_Img_Wrapper,
+// .talk-Contents_05_Txt_Wrapper,
+// .talk-Contents_06_Img_Wrapper,
+// .talk-Contents_06_Txt_Wrapper,
+// .talk-Profile_Detail {
+//   opacity: 0;
+//
+//   &.fade-In {
+//     animation: scroll_fadein_only_op 1s;
+//     animation-delay: 0.4s;
+//     animation-fill-mode: both;
+//   }
+// }
+
+// .talk-Contents_01_Txt_Wrapper {
+//   opacity: 0;
+//
+//   &.fade-In {
+//     animation: scroll_fadein_up_talk-Contents_01_Txt_Wrapper 1s;
+//     animation-delay: 0.4s;
+//     animation-fill-mode: both;
+//
+//     .title {
+//       animation: scroll_fadein_up_element 1s;
+//       animation-delay: 1.0s;
+//       animation-fill-mode: both;
+//     }
+//
+//     .talk-Component_Row {
+//       animation: scroll_fadein_up_element 1s;
+//       animation-fill-mode: both;
+//       &:nth-child(1) {
+//         animation-delay: 1.2s;
+//       }
+//       &:nth-child(2) {
+//         animation-delay: 1.4s;
+//       }
+//       &:nth-child(3) {
+//         animation-delay: 1.6s;
+//       }
+//       &:nth-child(4) {
+//         animation-delay: 1.8s;
+//       }
+//       &:nth-child(5) {
+//         animation-delay: 2.0s;
+//       }
+//       &:nth-child(6) {
+//         animation-delay: 2.0s;
+//       }
+//       &:nth-child(7) {
+//         animation-delay: 2.0s;
+//       }
+//     }
+//   }
+// }
+
+// @include max-screen($BREAK_POINT_TABLET) {
+//   .talk-Contents_01_Txt_Wrapper {
+//     opacity: 0;
+//
+//     &.fade-In {
+//       animation: scroll_fadein_up_talk-Contents_01_Txt_Wrapper_SP 1s;
+//       animation-delay: 0.4s;
+//       animation-fill-mode: both;
+//
+//       .title {
+//         animation: scroll_fadein_up_element 1s;
+//         animation-delay: 1.0s;
+//         animation-fill-mode: both;
+//       }
+//
+//       .talk-Component_Row {
+//         animation: scroll_fadein_up_element 1s;
+//         animation-fill-mode: both;
+//         &:nth-child(1) {
+//           animation-delay: 1.2s;
+//         }
+//         &:nth-child(2) {
+//           animation-delay: 1.4s;
+//         }
+//         &:nth-child(3) {
+//           animation-delay: 1.6s;
+//         }
+//         &:nth-child(4) {
+//           animation-delay: 1.8s;
+//         }
+//         &:nth-child(5) {
+//           animation-delay: 2.0s;
+//         }
+//         &:nth-child(6) {
+//           animation-delay: 2.0s;
+//         }
+//         &:nth-child(7) {
+//           animation-delay: 2.0s;
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// .talk-Contents_02_Txt_Wrapper {
+//
+//   // .talk-Contents_Talk_Wrapper {
+//   //   .title, .talk-Component_Row {
+//   //     opacity: 0;
+//   //   }
+//   // }
+//
+//   &.fade-In {
+//
+//     .talk-Contents_Talk_Wrapper {
+//       .title {
+//         animation: scroll_fadein_up_element 1s;
+//         animation-delay: 1.0s;
+//         animation-fill-mode: both;
+//       }
+//
+//       .talk-Component_Row {
+//         animation: scroll_fadein_up_element 1s;
+//         animation-fill-mode: both;
+//         &:nth-child(1) {
+//           animation-delay: 1.2s;
+//         }
+//         &:nth-child(2) {
+//           animation-delay: 1.4s;
+//         }
+//         &:nth-child(3) {
+//           animation-delay: 1.6s;
+//         }
+//         &:nth-child(4) {
+//           animation-delay: 1.8s;
+//         }
+//         &:nth-child(5) {
+//           animation-delay: 2.0s;
+//         }
+//         &:nth-child(6) {
+//           animation-delay: 2.0s;
+//         }
+//         &:nth-child(7) {
+//           animation-delay: 2.0s;
+//         }
+//       }
+//     }
+//   }
+// }

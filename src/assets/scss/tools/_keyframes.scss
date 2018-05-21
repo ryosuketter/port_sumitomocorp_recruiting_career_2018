@@ -1,0 +1,420 @@
+// STOP
+@keyframes stop {
+  0% {
+    // a
+  }
+}
+
+// Top arrow
+@keyframes arrow_hover {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    margin-left: 30px;
+    opacity: 0;
+  }
+  51% {
+    margin-left: 10px;
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Top arrow
+@keyframes arrow_hover_person_resident {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    right: 50px;
+
+    opacity: 0;
+  }
+  51% {
+    right: 70px;
+
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Footer arrow
+@keyframes arrow_hover_footer {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    right: -120px;
+
+    opacity: 0;
+  }
+  51% {
+    right: -100px;
+
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// arrow page top
+@keyframes arrow_hover_vertical {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    top: -83px;
+
+    opacity: 0;
+  }
+  51% {
+    top: -63px;
+
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes nav_Bg {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+// Nav Bar Top デフォルト→Bg出現時
+@keyframes nav_Btm_Top_Start {
+  0% {
+    top: 0;
+
+    transform: rotate(-45deg);
+    width: 0;
+  }
+  50% {
+    top: 0;
+
+    transform: rotate(0);
+    width: 0;
+  }
+  100% {
+    top: 0;
+
+    transform: rotate(0);
+    width: 100%;
+  }
+}
+
+// Nav Bar Top Bg出現時→デフォルト
+@keyframes nav_Btm_Top_End {
+  0% {
+    transform: rotate(0);
+    width: 100%;
+  }
+  50% {
+    top: 0;
+
+    transform: rotate(0deg);
+    width: 0;
+  }
+  100% {
+    top: 6px;
+
+    transform: rotate(-45deg);
+    width: 100%;
+  }
+}
+
+// Nav Bar Middle デフォルト→Bg出現時
+@keyframes nav_Btm_Mid_Start {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+// Nav Bar Middle Bg出現時→デフォルト
+@keyframes nav_Btm_Mid_End {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+// Nav Bar Bottom デフォルト→Bg出現時
+@keyframes nav_Btm_Btm_Start {
+  0% {
+    right: 0;
+    bottom: 6px;
+
+    transform: rotate(45deg);
+    width: 0;
+  }
+  50% {
+    right: 0;
+    bottom: 0;
+
+    transform: rotate(0);
+    width: 0;
+  }
+  100% {
+    right: 0;
+    bottom: 0;
+
+    transform: rotate(0);
+    width: 20px;
+  }
+}
+
+// Nav Bar Bottom Bg出現時→デフォルト
+@keyframes nav_Btm_Btm_End {
+  0% {
+    transform: rotate(0);
+    width: 20px;
+  }
+  50% {
+    bottom: 0;
+
+    transform: rotate(0deg);
+    width: 0;
+  }
+  100% {
+    bottom: 6px;
+
+    transform: rotate(45deg);
+    width: 100%;
+  }
+}
+
+// Nav Txt Link フェードイン
+@keyframes nav_Txt_Link {
+  0% {
+    left: 20px;
+
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+
+    opacity: 1;
+  }
+}
+
+@keyframes loading_fadein_up {
+  0% {
+    top: 20px;
+
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+
+    opacity: 1;
+  }
+}
+
+// MV Fadein（TOP & underlayer）
+@keyframes loading_fadein_up {
+  0% {
+    top: 10px;
+
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+
+    opacity: 1;
+  }
+}
+
+@keyframes loading_fadein_down {
+  0% {
+    top: -10px;
+
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+
+    opacity: 1;
+  }
+}
+
+@keyframes scroll_fadein_up_top-Message_Box {
+  0% {
+    top: 54%;
+    right: 0;
+
+    opacity: 0;
+  }
+  100% {
+    top: 50%;
+
+    opacity: 1;
+  }
+}
+
+@keyframes scroll_fadein_up_top-Person_Img_Detail_Box {
+  0% {
+    bottom: -66px;
+
+    opacity: 0;
+  }
+  100% {
+    bottom: -56px;
+
+    opacity: 1;
+  }
+}
+
+@keyframes scroll_fadein_up_top-Talk_Img_Detail_Box {
+  0% {
+    bottom: -183px;
+
+    opacity: 0;
+  }
+  100% {
+    bottom: -173px;
+
+    opacity: 1;
+  }
+}
+
+@keyframes scroll_fadein_up_top-Resident_Box_Detail {
+  0% {
+    position: relative;
+    top: 5px;
+
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0;
+
+    opacity: 1;
+  }
+}
+
+@keyframes scroll_fadein_up_element {
+  0% {
+    position: relative;
+    top: 8px;
+
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0;
+
+    opacity: 1;
+  }
+}
+
+@keyframes scroll_fadein_only_op {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scroll_fadein_up_message-Contents_Txt_Wrapper {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes scroll_fadein_up_message-Contents_Txt_Wrapper_SP {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -11%);
+  }
+}
+
+@keyframes scroll_fadein_up_person-Contents_01_Txt_Wrapper {
+  0% {
+    margin-top: 70px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 60px;
+    opacity: 1;
+  }
+}
+
+@keyframes scroll_fadein_up_person-Contents_01_Txt_Wrapper_SP {
+  0% {
+    margin-top: 10px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+// @keyframes scroll_fadein_up_talk-Contents_01_Txt_Wrapper {
+//   0% {
+//     top: 110px;
+//     opacity: 0;
+//   }
+//   100% {
+//     top: 100px;
+//     opacity: 1;
+//   }
+// }
+//
+// @keyframes scroll_fadein_up_talk-Contents_01_Txt_Wrapper_SP {
+//   0% {
+//     margin-top: -40px;
+//     opacity: 0;
+//   }
+//   100% {
+//     margin-top: -50px;
+//     opacity: 1;
+//   }
+// }

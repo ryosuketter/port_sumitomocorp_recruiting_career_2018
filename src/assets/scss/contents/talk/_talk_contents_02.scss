@@ -1,0 +1,135 @@
+.talk-Contents_02_Wrapper {
+  .talk-Contents_02 {
+    .talk-Contents_02_Inner {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-bottom: 120px;
+    }
+  }
+}
+
+.talk-Contents_02_01_Img_Wrapper {
+  // a
+}
+
+.talk-Contents_02_Txt_Wrapper {
+  .talk-Contents_02_Txt_Inner {
+    .talk-Contents_Talk_Wrapper {
+      max-width: 720px;
+      min-width: 420px;
+      margin: 0 auto;
+      padding: 100px 20px 0;
+    }
+  }
+}
+
+.talk-Contents_02_02_Img_Wrapper {
+  overflow: hidden;
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .talk-Contents_02_Wrapper {
+    .talk-Contents_02 {
+      .talk-Contents_02_Inner {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 80px;
+      }
+    }
+  }
+
+  .talk-Contents_02_01_Img_Wrapper {
+    position: relative;
+    z-index: $Z_2;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  .talk-Contents_02_Txt_Wrapper {
+    margin: 0 auto;
+    .talk-Contents_02_Txt_Inner {
+      .talk-Contents_Talk_Wrapper {
+        max-width: 620px;
+        min-width: 100%;
+        margin: 0 auto;
+        padding: 100px 20px 0px;
+      }
+    }
+  }
+
+  .talk-Contents_02_02_Img_Wrapper {
+    overflow: visible;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: $Z_1;
+
+    img {
+      width: 90%;
+      position: relative;
+      right: -36px;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .talk-Contents_02_Wrapper {
+    .talk-Contents_02 {
+      .talk-Contents_02_Inner {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 16px;
+      }
+    }
+  }
+
+  .talk-Contents_02_01_Img_Wrapper {
+    position: relative;
+    z-index: $Z_2;
+
+    img {
+      width: 60%;
+      position: relative;
+      left: 40%;
+      transform: translate(-50%);
+    }
+  }
+
+  .talk-Contents_02_Txt_Wrapper {
+    margin: 0 auto;
+    .talk-Contents_02_Txt_Inner {
+      .talk-Contents_Talk_Wrapper {
+        max-width: 620px;
+        min-width: 100%;
+        margin: 0 auto;
+        padding: 50px 20px 0px;
+      }
+    }
+  }
+
+  .talk-Contents_02_02_Img_Wrapper {
+    overflow: visible;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    // left: 183px;
+    z-index: $Z_1;
+    width: 60%;
+
+    img {
+      width: 50%;
+      position: absolute;
+      right: 0;
+      // height: 230px;
+    }
+  }
+}

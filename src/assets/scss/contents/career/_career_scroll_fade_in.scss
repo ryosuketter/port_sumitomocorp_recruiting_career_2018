@@ -1,0 +1,94 @@
+// .career-Contents_01_Inner {
+//   .title {
+//     opacity: 0;
+//
+//     &.fade-In {
+//       animation: scroll_fadein_only_op 1s;
+//       animation-delay: 0.4s;
+//       animation-fill-mode: both;
+//     }
+//   }
+// }
+//
+// .career-Contents_Img_Detail_Wrapper {
+//   opacity: 0;
+//
+//   &.fade-In {
+//     animation: scroll_fadein_only_op 1s;
+//     animation-fill-mode: both;
+//
+//     &:nth-child(1) {
+//       animation-delay: 0.6s;
+//     }
+//     &:nth-child(2) {
+//       animation-delay: 0.8s;
+//     }
+//   }
+// }
+//
+// .career-Contents_02_Inner {
+//   .title {
+//     opacity: 0;
+//
+//     &.fade-In {
+//       animation: scroll_fadein_only_op 1s;
+//       animation-delay: 0.4s;
+//       animation-fill-mode: both;
+//     }
+//   }
+// }
+//
+// .career-Contents_02_Img_Wrapper {
+//   opacity: 0;
+//
+//   &.fade-In {
+//     animation: scroll_fadein_only_op 1s;
+//     animation-delay: 0.6s;
+//     animation-fill-mode: both;
+//   }
+// }
+//
+// .career-Contents_03_Inner {
+//   .title {
+//     opacity: 0;
+//
+//     &.fade-In {
+//       animation: scroll_fadein_only_op 1s;
+//       animation-delay: 0.4s;
+//       animation-fill-mode: both;
+//     }
+//   }
+// }
+//
+// .career-Contents_03_List_Wrapper {
+//   ul {
+//     li {
+//       opacity: 0;
+//     }
+//   }
+//
+//   &.fade-In {
+//     ul {
+//       li {
+//         animation: scroll_fadein_only_op 1s;
+//         animation-fill-mode: both;
+//         &:nth-child(1) {
+//           animation-delay: 0.6s;
+//         }
+//         &:nth-child(2) {
+//           animation-delay: 0.8s;
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// .career-Contents_03_Box_Wrapper, .career-Contents_03_Box_Link_Wrapper {
+//   opacity: 0;
+//
+//   &.fade-In {
+//     animation: scroll_fadein_only_op 1s;
+//     animation-delay: 1s;
+//     animation-fill-mode: both;
+//   }
+// }

@@ -1,0 +1,253 @@
+.resident-Contents_03_Wrapper {
+  .resident-Contents_03 {
+    .resident-Contents_03_Inner {
+      display: flex;
+      margin: 0 auto 200px;
+      max-width: 1680px;
+    }
+  }
+}
+
+.resident-Contents_03_Img_Wrapper {
+  position: relative;
+
+  font-size: 0;
+  height: 100%;
+
+  img {
+    position: relative;
+
+    z-index: $Z_2;
+  }
+
+  &:after {
+    position: absolute;
+    top: 100%;
+
+    background-color: $Light_Blue;
+    content: "";
+    display: block;
+    height: 80px;
+    width: 90%;
+    z-index: $Z_1;
+  }
+}
+
+.resident-Contents_03_Txt_Wrapper {
+  margin-left: 120px;
+  width: 480px;
+
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .body {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 2.2;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@include max-screen(1700px) {
+  .resident-Contents_03_Wrapper {
+    .resident-Contents_03 {
+      .resident-Contents_03_Inner {
+        display: flex;
+        margin: 0 auto 100px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .resident-Contents_03_Img_Wrapper {
+    position: relative;
+
+    font-size: 0;
+    height: 100%;
+    width: 70%;
+
+    img {
+      position: relative;
+      // width: 600px;
+      // height: 466px;
+
+      width: 100%;
+      z-index: $Z_2;
+    }
+
+    &:after {
+      position: absolute;
+      top: 100%;
+      bottom: auto;
+
+      background-color: $Light_Blue;
+      content: "";
+      display: block;
+      height: 60px;
+      width: 80%;
+      z-index: $Z_1;
+    }
+  }
+
+  .resident-Contents_03_Txt_Wrapper {
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 580px;
+
+    .title {
+      font-size: 28px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .body {
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 2.2;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .resident-Contents_03_Wrapper {
+    .resident-Contents_03 {
+      .resident-Contents_03_Inner {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin: 0 auto 70px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .resident-Contents_03_Img_Wrapper {
+    position: relative;
+
+    font-size: 0;
+    margin: 0 auto;
+    margin-left: -6%;
+
+
+    img {
+      position: relative;
+
+      width: 600px;
+      z-index: $Z_2;
+    }
+
+    &:after {
+      position: absolute;
+      top: 460px;
+      bottom: auto;
+
+      background-color: $Light_Blue;
+      content: "";
+      display: block;
+      height: 60px;
+      width: 90%;
+      z-index: $Z_1;
+    }
+  }
+
+  .resident-Contents_03_Txt_Wrapper {
+    margin: 0 auto;
+    padding-bottom: 16px;
+    padding-top: 106px;
+    width: 70%;
+
+    .title {
+      font-size: 28px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .body {
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 2.2;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .resident-Contents_03_Wrapper {
+    .resident-Contents_03 {
+      .resident-Contents_03_Inner {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin: 0 auto 15px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .resident-Contents_03_Img_Wrapper {
+    position: relative;
+
+    font-size: 0;
+    margin-left: 0;
+    margin-right: auto;
+    width: 100%;
+
+    img {
+      position: relative;
+      // width: 300px;
+      // height: 234px;
+
+      width: 95%;
+      z-index: $Z_2;
+    }
+
+    &:after {
+      position: absolute;
+      top: 100%;
+      bottom: auto;
+
+      background-color: $Light_Blue;
+      content: "";
+      display: block;
+      height: 30px;
+      width: 86%;
+      z-index: $Z_1;
+    }
+  }
+
+  .resident-Contents_03_Txt_Wrapper {
+    margin: 0 auto;
+    padding: 59px 25px 16px;
+    width: 100%;
+
+    .title {
+      font-size: 19px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .body {
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 2;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.talk-Component_Row {
+  display: flex;
+  line-height: 2.2;
+  margin-bottom: 20px;
+
+  .speaker {
+    font-weight: 600;
+    width: 10%;
+    font-size: 14px;
+  }
+
+  .contents {
+    width: 90%;
+    font-size: 14px;
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .talk-Component_Row {
+    display: flex;
+    line-height: 2;
+    margin-bottom: 20px;
+
+    .speaker {
+      font-weight: 600;
+      width: 10%;
+      font-size: 13px;
+    }
+
+    .contents {
+      width: 90%;
+      font-size: 13px;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .talk-Component_Row {
+    display: flex;
+    line-height: 2;
+    margin-bottom: 12px;
+
+    .speaker {
+      font-weight: 600;
+      width: 10%;
+      font-size: 12px;
+    }
+
+    .contents {
+      width: 90%;
+      font-size: 12px;
+    }
+  }
+}

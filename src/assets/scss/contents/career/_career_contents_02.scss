@@ -1,0 +1,130 @@
+.career-Contents_02_Wrapper {
+  .career-Contents_02 {
+    .career-Contents_02_Inner {
+      position: relative;
+
+      background: url("../img/career/career-contents_02_bg_min.jpg")bottom 0 center /cover no-repeat;
+      height: 618px;
+      padding: 111px 0 100px;
+
+      .title {
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 68px;
+        text-align: center;
+
+        &:after {
+          position: relative;
+          top: 16px;
+          left: 50%;
+
+          background-color: $Light_Blue;
+          content: "";
+          display: block;
+          height: 1px;
+          transform: translateX(-50%);
+          width: 110px;
+        }
+      }
+      .career-Contents_02_Img_Wrapper {
+        text-align: center;
+
+        .sp {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .career-Contents_02_Wrapper {
+    .career-Contents_02 {
+      .career-Contents_02_Inner {
+        position: relative;
+
+        background: url("../img/career/career-contents_02_bg_min.jpg")bottom 0 center /cover no-repeat;
+        height: 550px;
+        padding: 100px 0 80px;
+
+        .title {
+          color: #ffffff;
+          font-size: 32px;
+          margin-bottom: 68px;
+          text-align: center;
+
+          &:after {
+            position: relative;
+            top: 16px;
+            left: 50%;
+
+            background-color: $Light_Blue;
+            content: "";
+            display: block;
+            height: 1px;
+            transform: translateX(-50%);
+            width: 110px;
+          }
+        }
+        .career-Contents_02_Img_Wrapper {
+          text-align: center;
+
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .career-Contents_02_Wrapper {
+    .career-Contents_02 {
+      .career-Contents_02_Inner {
+        position: relative;
+
+        background: url("../img/career/career-contents_02_bg_min.jpg")bottom 0 center /cover no-repeat;
+        height: 320px;
+        padding: 55px 0 80px;
+
+        .title {
+          color: #ffffff;
+          font-size: 19px;
+          margin-bottom: 38px;
+          text-align: center;
+
+          &:after {
+            position: relative;
+            top: 10px;
+            left: 50%;
+
+            background-color: $Light_Blue;
+            content: "";
+            display: block;
+            height: 1px;
+            transform: translateX(-50%);
+            width: 55px;
+          }
+        }
+        .career-Contents_02_Img_Wrapper {
+          text-align: center;
+
+          .pc {
+            display: none;
+          }
+
+          .sp {
+            display: inline-block;
+          }
+
+          img {
+            max-width: 400px;
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+}

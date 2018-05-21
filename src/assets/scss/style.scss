@@ -1,0 +1,98 @@
+// ==========================================================================
+// settings
+// ==========================================================================
+@import "./settings/_variables.scss";
+@import "./settings/_zindex.scss";
+
+// ==========================================================================
+// tools
+// ==========================================================================
+@import "./tools/mixins/_mediaqueries.scss";
+@import "./tools/_line.scss";
+@import "./tools/_keyframes.scss";
+
+// ==========================================================================
+// base（基本normalize.css）
+// ==========================================================================
+@import "./base/_normalize.scss";
+
+// ==========================================================================
+// contents（よく使うコンポーネントと各カテゴリーごとにファイルをつくる）
+// ==========================================================================
+
+// TOP
+@import "./contents/top/_top_mv.scss";
+@import "./contents/top/_top_message.scss";
+@import "./contents/top/_top_person.scss";
+@import "./contents/top/_top_talk.scss";
+@import "./contents/top/_top_resident.scss";
+@import "./contents/top/_top_loading.scss";
+@import "./contents/top/_top_loading_bg.scss";
+@import "./contents/top/_top_scroll_fade_in_img.scss";
+@import "./contents/top/_top_scroll_fade_in_box.scss";
+
+// message（人事部メッセージ）
+@import "./contents/message/_message_mv.scss";
+@import "./contents/message/_message_contents_01.scss";
+@import "./contents/message/_message_scroll_fade_in_box.scss";
+@import "./contents/message/_message_scroll_fade_in_img.scss";
+
+// person（社員インタビュー）
+@import "./contents/person/_person_mv.scss";
+@import "./contents/person/_person_contents_01.scss";
+@import "./contents/person/_person_contents_02.scss";
+@import "./contents/person/_person_contents_03.scss";
+@import "./contents/person/_person_profile.scss";
+@import "./contents/person/_person_link.scss";
+@import "./contents/person/_person_scroll_fade_in_box.scss";
+@import "./contents/person/_person_scroll_fade_in_img.scss";
+
+// talk（対談）
+@import "./contents/talk/_talk_mv.scss";
+@import "./contents/talk/_talk_contents_01.scss";
+@import "./contents/talk/_talk_contents_02.scss";
+@import "./contents/talk/_talk_contents_03.scss";
+@import "./contents/talk/_talk_contents_04.scss";
+@import "./contents/talk/_talk_contents_05.scss";
+@import "./contents/talk/_talk_contents_06.scss";
+@import "./contents/talk/_talk_profile.scss";
+@import "./contents/talk/_talk_component.scss";
+@import "./contents/talk/_talk_scroll_fade_in.scss";
+
+// resident（駐在員インタビュー）
+@import "./contents/resident/_resident_mv.scss";
+@import "./contents/resident/_resident_contents_01.scss";
+@import "./contents/resident/_resident_contents_02.scss";
+@import "./contents/resident/_resident_contents_03.scss";
+@import "./contents/resident/_resident_profile.scss";
+@import "./contents/resident/_resident_link.scss";
+@import "./contents/resident/_resident_scroll_fade_in.scss";
+
+// career（キャリア登録制度について）
+@import "./contents/career/_career_mv.scss";
+@import "./contents/career/_career_contents_01.scss";
+@import "./contents/career/_career_contents_02.scss";
+@import "./contents/career/_career_contents_03.scss";
+@import "./contents/career/_career_scroll_fade_in.scss";
+
+// ==========================================================================
+// structures（共通部分の定義）
+// ==========================================================================
+@import "./structures/_footer.scss";
+@import "./structures/_header.scss";
+@import "./structures/_sp_nav.scss";
+@import "./structures/_page_top.scss";
+@import "./structures/_arrow.scss";
+@import "./structures/_arrow_page_top.scss";
+
+@import "./structures/underlayer/_mv_underlayer.scss";
+
+@import "./structures/grid/_bg_cube_grid.scss";
+@import "./structures/grid/_st_mv_grid.scss";
+
+// ==========================================================================
+// vendor（DLして使うファイルとか）
+// ==========================================================================
+@import "./vendor/_animate.scss";
+@import "./vendor/_font-awesome.scss";
+@import "./vendor/_font.scss";

@@ -1,0 +1,191 @@
+// MV下の一番上のIMGのスプライトアニメーション（1と2ページ共通）
+.person-Contents_01_Img_Wrapper {
+  .person-Fade_In {
+    &.fade-In {
+      animation: fade_in_animation_person_01 0.6s steps(16);
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+// MV下の上から二番目のIMGのスプライトアニメーション（1と2ページ共通）
+.person-Contents_02_Img_Wrapper {
+  .person-Fade_In {
+    &.fade-In {
+      animation: fade_in_animation_person_02 0.6s steps(16);
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+// MV下の上から三番目のIMGのスプライトアニメーション（1と2ページ共通）
+.person-Contents_03_Img_Wrapper {
+  .person-Fade_In {
+    &.fade-In {
+      animation: fade_in_animation_person_03 0.6s steps(16);
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+  &:after {
+    opacity: 0;
+    transition: 3s;
+  }
+  &.fade-In {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+.fade-In {
+  // MV下の一番上のIMGのスプライトアニメーション（1と2ページ別々）
+  &.Img01-01-Person {
+    background: url("../img/person/01/person-contents_01_min_sprite.png") no-repeat;
+    background-size: 700px 12291px;
+    height: 723px;
+    width: 700px;
+  }
+  // MV下の一番上のIMGのスプライトアニメーション（1と2ページ別々）
+  &.Img01-02-Person {
+    background: url("../img/person/02/person-contents_01_min_sprite.png") no-repeat;
+    background-size: 700px 12291px;
+    height: 723px;
+    width: 700px;
+  }
+  // MV下の上から二番目のIMGのスプライトアニメーション（1と2ページ別々）
+  &.Img02-01-Person {
+    background: url("../img/person/01/person-contents_02_min_sprite.png") no-repeat;
+    background-size: 720px 13770px;
+    height: 810px;
+    width: 720px;
+  }
+  // MV下の上から二番目のIMGのスプライトアニメーション（1と2ページ別々）
+  &.Img02-02-Person {
+    background: url("../img/person/02/person-contents_02_min_sprite.png") no-repeat;
+    background-size: 720px 13770px;
+    height: 810px;
+    width: 720px;
+  }
+  @include max-screen(1500px) {
+    // MV下の上から二番目のIMGのスプライトアニメーション（1と2ページ別々）
+    &.Img02-01-Person {
+      background: url("../img/person/01/person-contents_02_min_sprite.png") no-repeat;
+      background-size: 600px 11900px;
+      height: 700px;
+      width: 600px;
+      margin-left: auto;
+    }
+    // MV下の上から二番目のIMGのスプライトアニメーション（1と2ページ別々）
+    &.Img02-02-Person {
+      background: url("../img/person/02/person-contents_02_min_sprite.png") no-repeat;
+      background-size: 600px 11900px;
+      height: 700px;
+      width: 600px;
+      margin-left: auto;
+    }
+  }
+  // MV下の上から二番目のIMGのスプライトアニメーション（1と2ページ別々）
+  &.Img03-01-Person {
+    background: url("../img/person/01/person-contents_03_min_sprite.png") no-repeat;
+    background-size: 1080px 14280px;
+    height: 840px;
+    width: 1080px;
+    position: relative;
+
+    z-index: $Z_2;
+  }
+  // MV下の上から二番目のIMGのスプライトアニメーション（1と2ページ別々）
+  &.Img03-02-Person {
+    background: url("../img/person/02/person-contents_03_min_sprite.png") no-repeat;
+    background-size: 1080px 14280px;
+    height: 840px;
+    width: 1080px;
+    position: relative;
+
+    z-index: $Z_2;
+  }
+  @include max-screen(1500px) {
+    // MV下の上から二番目のIMGのスプライトアニメーション（1と2ページ別々）
+    &.Img03-01-Person {
+      background: url("../img/person/01/person-contents_03_min_sprite.png") no-repeat;
+      background-size: 550px 6800px;
+      height: 400px;
+      width: 550px;
+      position: relative;
+
+      z-index: $Z_2;
+    }
+    // MV下の上から二番目のIMGのスプライトアニメーション（1と2ページ別々）
+    &.Img03-02-Person {
+      background: url("../img/person/02/person-contents_03_min_sprite.png") no-repeat;
+      background-size: 550px 6800px;
+      height: 400px;
+      width: 550px;
+      position: relative;
+
+      z-index: $Z_2;
+    }
+  }
+}
+
+// MV下の一番上のIMGのスプライトアニメーション（1と2ページ共通）
+@keyframes fade_in_animation_person_01 {
+  to { background-position: 0 -11568px; }
+}
+// MV下の上から二番目のスプライトアニメーション（1と2ページ共通）
+@keyframes fade_in_animation_person_02 {
+  to { background-position: 0 -12960px; }
+}
+@include max-screen(1500px) {
+  @keyframes fade_in_animation_person_02 {
+    to { background-position: 0 -11200px; }
+  }
+}
+// MV下の上から三番目のスプライトアニメーション（1と2ページ共通）
+@keyframes fade_in_animation_person_03 {
+  to { background-position: 0 -13440px; }
+}
+@include max-screen(1500px) {
+  @keyframes fade_in_animation_person_03 {
+    to { background-position: 0 -6400px; }
+  }
+}
+
+// MV下の一番上のIMGのスプライトアニメーション（1と2ページ共通）
+// Tablet以下はエフェクト消してる
+@include max-screen($BREAK_POINT_TABLET) {
+  .fade-In {
+    &.Img01-01-Person {
+      display: none;
+    }
+    &.Img01-02-Person {
+      display: none;
+    }
+    &.Img02-01-Person {
+      display: none;
+    }
+    &.Img02-02-Person {
+      display: none;
+    }
+    &.Img03-01-Person {
+      display: none;
+    }
+    &.Img03-02-Person {
+      display: none;
+    }
+  }
+
+  .person-Contents_01_Img_Wrapper,
+  .person-Contents_02_Img_Wrapper,
+  .person-Contents_03_Img_Wrapper {
+    opacity: 0;
+    &.fade-In {
+      animation: scroll_fadein_only_op 1s;
+      animation-delay: 0.4s;
+      animation-fill-mode: both;
+    }
+  }
+}

@@ -1,0 +1,246 @@
+.talk-Contents_01_Wrapper {
+  .talk-Contents_01 {
+    .talk-Contents_01_Inner {
+      position: relative;
+
+      display: flex;
+      flex-flow: row-reverse;
+      margin: 0 auto;
+      max-width: 1920px;
+      padding-bottom: 122px;
+      padding-top: 160px;
+    }
+  }
+}
+
+.talk-Contents_01_Img_Wrapper {
+  font-size: 0;
+}
+
+.talk-Contents_01_Txt_Wrapper {
+  position: relative;
+  top: 100px;
+  right: -120px;
+
+  background-color: $Light_Blue;
+  height: 100%;
+  max-width: 720px;
+  min-width: 720px;
+
+  .talk-Contents_01_Txt_Inner {
+    color: #ffffff;
+    padding: 75px 80px;
+
+    .title {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 21px;
+    }
+  }
+}
+
+@include max-screen(1680px) {
+  .talk-Contents_01_Wrapper {
+    .talk-Contents_01 {
+      .talk-Contents_01_Inner {
+        position: relative;
+
+        display: flex;
+        flex-flow: row-reverse;
+        margin: 0 auto;
+        max-width: 1920px;
+        padding-bottom: 122px;
+        padding-top: 160px;
+      }
+    }
+  }
+
+  .talk-Contents_01_Img_Wrapper {
+    font-size: 0;
+    overflow: hidden;
+    img {
+      position: relative;
+      right: 100px;
+    }
+  }
+
+  .talk-Contents_01_Txt_Wrapper {
+    position: relative;
+    top: 100px;
+    right: -120px;
+
+    background-color: $Light_Blue;
+    height: 100%;
+    max-width: 720px;
+    min-width: 720px;
+
+    .talk-Contents_01_Txt_Inner {
+      color: #ffffff;
+      padding: 75px 80px;
+
+      .title {
+        font-size: 36px;
+        margin-bottom: 21px;
+      }
+    }
+  }
+}
+
+@include max-screen(1260px) {
+  .talk-Contents_01_Wrapper {
+    .talk-Contents_01 {
+      .talk-Contents_01_Inner {
+        position: relative;
+
+        display: flex;
+        flex-flow: row-reverse;
+        margin: 0 auto;
+        max-width: 1920px;
+        padding-bottom: 122px;
+        padding-top: 160px;
+      }
+    }
+  }
+
+  .talk-Contents_01_Img_Wrapper {
+    font-size: 0;
+    overflow: hidden;
+    img {
+      position: relative;
+      right: 300px;
+    }
+  }
+
+  .talk-Contents_01_Txt_Wrapper {
+    position: relative;
+    top: 100px;
+    right: -30px;
+
+    background-color: $Light_Blue;
+    height: 100%;
+    max-width: 720px;
+    min-width: 720px;
+
+    .talk-Contents_01_Txt_Inner {
+      color: #ffffff;
+      padding: 75px 80px;
+
+      .title {
+        font-size: 36px;
+        margin-bottom: 21px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .talk-Contents_01_Wrapper {
+    .talk-Contents_01 {
+      .talk-Contents_01_Inner {
+        position: relative;
+
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 1920px;
+        padding-bottom: 80px;
+        padding-top: 80px;
+      }
+    }
+  }
+
+  .talk-Contents_01_Img_Wrapper {
+    position: relative;
+
+    font-size: 0;
+    overflow: visible;
+    z-index: $Z_1;
+
+    img {
+      position: static;
+      right: auto;
+
+      width: 80%;
+    }
+  }
+
+  .talk-Contents_01_Txt_Wrapper {
+    position: static;
+    top: auto;
+    right: auto;
+
+    background-color: $Light_Blue;
+    height: 100%;
+    margin-left: auto;
+    margin-top: -53px;
+    max-width: 600px;
+    min-width: 600px;
+
+    .talk-Contents_01_Txt_Inner {
+      color: #ffffff;
+      padding: 90px 50px 60px;
+
+      .title {
+        font-size: 28px;
+        margin-bottom: 21px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .talk-Contents_01_Wrapper {
+    .talk-Contents_01 {
+      .talk-Contents_01_Inner {
+        position: relative;
+
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 1920px;
+        padding-bottom: 25px;
+        padding-top: 33px;
+      }
+    }
+  }
+
+  .talk-Contents_01_Img_Wrapper {
+    position: relative;
+
+    font-size: 0;
+    overflow: visible;
+    z-index: $Z_1;
+
+    img {
+      position: static;
+      right: auto;
+
+      width: 95%;
+    }
+  }
+
+  .talk-Contents_01_Txt_Wrapper {
+    position: static;
+    top: auto;
+    right: auto;
+
+    background-color: $Light_Blue;
+    height: 100%;
+    margin-left: auto;
+    margin-top: -50px;
+    max-width: 95%;
+    min-width: 95%;
+
+    .talk-Contents_01_Txt_Inner {
+      color: #ffffff;
+      padding: 74px 22px 14px;
+
+      .title {
+        font-size: 19px;
+        margin-bottom: 21px;
+      }
+    }
+  }
+}

@@ -1,0 +1,310 @@
+.top-Talk_Wrapper {
+  .top-Talk {
+    .top-Talk_Inner {
+      margin-bottom: 225px;
+      padding-top: 160px;
+    }
+  }
+}
+
+.top-Talk_Img_Wrapper {
+  .top-Talk_Img_Detail_Wrapper {
+    position: relative;
+
+    margin: 0 auto;
+    max-width: 1200px;
+
+    img {
+      // width: 100%;
+      display: none;
+    }
+
+    .top-Talk_Img_Detail_Box {
+      position: absolute;
+      right: 0;
+      bottom: -145px;
+
+      background-color: #ffffff;
+      // border: 1px solid #111111;
+      max-width: 600px;
+
+      a {
+        position: relative;
+
+        display: block;
+        font-size: 0;
+        height: 100%;
+        padding: 64px 60px 75px 75px;
+        text-decoration: none;
+        width: 100%;
+      }
+
+      .title {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 31px;
+        letter-spacing: -1px;
+      }
+
+      .body {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 2;
+        margin-bottom: 38px;
+        letter-spacing: 1.2px;
+      }
+
+      .top-Talk_Box_Readmore {
+        color: $Light_Blue;
+        font-size: 14px;
+
+        .arrow {
+          // display: inline-block;
+          height: 15px;
+          margin-left: 20px;
+          width: 55px;
+          display: none;
+        }
+        .st-Arrow_Wrapper {
+          position: relative;
+          top: -20px;
+          left: 100px;
+        }
+      }
+      &:hover {
+        .st-Arrow_Wrapper {
+          animation: st-Arrow_Bownce 2s infinite;
+          transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+          .st-Arrow_Line {
+            animation: st-Arrow_Line 3s infinite;
+            transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          }
+          .st-Arrow_Triangle_Line.first {
+            animation: st-Arrow_Triangle_Line_f 3s infinite;
+            transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          }
+          .st-Arrow_Triangle_Line.second {
+            animation: st-Arrow_Triangle_Line_s 3s infinite;
+            transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          }
+        }
+
+        .arrow {
+          animation: arrow_hover 0.8s;
+          animation-fill-mode: both;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen(1244px) {
+  .top-Talk_Wrapper {
+    .top-Talk {
+      .top-Talk_Inner {
+        margin-bottom: 225px;
+        padding: 100px 30px 0;
+      }
+    }
+  }
+
+  .top-Talk_Img_Wrapper {
+    .top-Talk_Img_Detail_Wrapper {
+      position: relative;
+
+      margin: 0 auto;
+      max-width: 1200px;
+
+      img {
+        //- width: 100%;
+      }
+
+      .top-Talk_Img_Detail_Box {
+        position: absolute;
+        top: 70%;
+        right: 0;
+        bottom: auto;
+
+        background-color: #ffffff;
+        max-width: 500px;
+
+        a {
+          position: relative;
+
+          display: block;
+          font-size: 0;
+          height: 100%;
+          padding: 65px 70px;
+          text-decoration: none;
+          width: 100%;
+        }
+
+        .title {
+          font-size: 36px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        .body {
+          font-size: 14px;
+          line-height: 2;
+          margin-bottom: 20px;
+        }
+
+        .top-Talk_Box_Readmore {
+          color: $Light_Blue;
+          font-size: 14px;
+        }
+        &:hover {
+          .arrow {
+            animation: stop 0.8s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .top-Talk_Wrapper {
+    .top-Talk {
+      .top-Talk_Inner {
+        margin-bottom: 225px;
+        padding: 80px 22px 0;
+      }
+    }
+  }
+
+  .top-Talk_Img_Wrapper {
+    .top-Talk_Img_Detail_Wrapper {
+      position: relative;
+
+      margin: 0 auto;
+      max-width: 1200px;
+
+      img {
+        display: inline-block;
+        width: 100%;
+      }
+
+      .top-Talk_Img_Detail_Box {
+        position: absolute;
+        top: 80%;
+        right: 0;
+        bottom: auto;
+
+        background-color: #ffffff;
+        max-width: 80%;
+
+        a {
+          position: relative;
+
+          display: block;
+          font-size: 0;
+          height: 100%;
+          padding: 55px 60px;
+          text-decoration: none;
+          width: 100%;
+        }
+
+        .title {
+          font-size: 28px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        .body {
+          font-size: 14px;
+          line-height: 2;
+          margin-bottom: 20px;
+        }
+
+        .top-Talk_Box_Readmore {
+          color: $Light_Blue;
+          font-size: 14px;
+
+          .arrow {
+            display: inline-block;
+            height: 15px;
+            margin-left: 20px;
+            width: 55px;
+          }
+          .st-Arrow_Wrapper {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .top-Talk_Wrapper {
+    .top-Talk {
+      .top-Talk_Inner {
+        margin-bottom: 245px;
+        padding: 80px 22px 0;
+      }
+    }
+  }
+
+  .top-Talk_Img_Wrapper {
+    .top-Talk_Img_Detail_Wrapper {
+      position: relative;
+
+      margin: 0 auto;
+      max-width: 1200px;
+
+      img {
+        width: 100%;
+      }
+
+      .top-Talk_Img_Detail_Box {
+        position: absolute;
+        top: 76%;
+        right: 0;
+        bottom: auto;
+
+        background-color: #ffffff;
+        max-width: 94%;
+
+        a {
+          position: relative;
+
+          display: block;
+          font-size: 0;
+          height: 100%;
+          padding: 25px 26px;
+          text-decoration: none;
+          width: 100%;
+        }
+
+        .title {
+          font-size: 19px;
+          font-weight: 600;
+          margin-bottom: 16px;
+          font-weight: 600;
+        }
+
+        .body {
+          font-size: 12px;
+          line-height: 2;
+          margin-bottom: 16px;
+          font-weight: 300;
+        }
+
+        .top-Talk_Box_Readmore {
+          color: $Light_Blue;
+          font-size: 12px;
+
+          .arrow {
+            height: 12px;
+            margin-left: 20px;
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}

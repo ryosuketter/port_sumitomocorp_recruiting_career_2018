@@ -1,0 +1,205 @@
+.resident-Link_Wrapper {
+  .resident-Link {
+    .resident-Link_Inner {
+      margin: 0 auto 160px;
+      width: 1200px;
+
+      &.resident-01 {
+        background: url("../img/resident/01/resident-link_bg_img_min.jpg")bottom 0 center /cover no-repeat;
+      }
+      &.resident-02 {
+        background: url("../img/resident/02/resident-link_bg_img_min.jpg")bottom 0 center /cover no-repeat;
+      }
+    }
+  }
+}
+
+.resident-Link_Txt_Wrapper {
+  position: relative;
+
+  color: #ffffff;
+  display: block;
+  height: 100%;
+  padding-bottom: 75px;
+  padding-top: 120px;
+  text-align: center;
+  width: 100%;
+
+  .title {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin-bottom: 20px;
+  }
+
+  .position {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+  .body {
+    font-size: 20px;
+  }
+
+  .arrow {
+    position: absolute;
+    right: 60px;
+    bottom: 40px;
+
+    height: 15px;
+    width: 55px;
+
+    display: none;
+  }
+
+  .st-Arrow_Wrapper {
+    position: absolute;
+    right: 60px;
+    bottom: 40px;
+  }
+
+  &:hover {
+    .st-Arrow_Wrapper {
+      animation: st-Arrow_Bownce 2s infinite;
+      transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+      .st-Arrow_Line {
+        animation: st-Arrow_Line 3s infinite;
+        transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      }
+      .st-Arrow_Triangle_Line.first {
+        animation: st-Arrow_Triangle_Line_f 3s infinite;
+        transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      }
+      .st-Arrow_Triangle_Line.second {
+        animation: st-Arrow_Triangle_Line_s 3s infinite;
+        transition: transform cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      }
+    }
+
+    .arrow {
+      animation: arrow_hover_person_resident 0.8s;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+@include max-screen(1250px) {
+  .resident-Link_Wrapper {
+    .resident-Link {
+      padding: 0 25px;
+      .resident-Link_Inner {
+        margin: 0 auto 160px;
+        width: 100%;
+
+        &.resident-01 {
+          background: url("../img/resident/01/resident-link_bg_img_min.jpg")bottom 0 center /cover no-repeat;
+        }
+        &.resident-02 {
+          background: url("../img/resident/02/resident-link_bg_img_min.jpg")bottom 0 center /cover no-repeat;
+        }
+      }
+    }
+  }
+
+  .resident-Link_Txt_Wrapper {
+    color: #ffffff;
+    display: block;
+    height: 100%;
+    padding-bottom: 75px;
+    padding-top: 120px;
+    text-align: center;
+    width: 100%;
+
+    .title {
+      font-size: 32px;
+      letter-spacing: 1px;
+      line-height: 2;
+      margin-bottom: 20px;
+    }
+
+    .position {
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .body {
+      font-size: 20px;
+    }
+    .arrow {
+      position: absolute;
+      right: 60px;
+      bottom: 40px;
+
+      height: 15px;
+      width: 55px;
+
+      display: inline-block;
+    }
+
+    .st-Arrow_Wrapper {
+      display: none;
+    }
+    &:hover {
+      .arrow {
+        animation: stop 0.8s;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .resident-Link_Wrapper {
+    .resident-Link {
+      padding: 0 25px;
+      .resident-Link_Inner {
+        margin: 0 auto 50px;
+        width: 100%;
+
+        &.resident-01 {
+          background: url("../img/resident/01/resident-link_bg_img_min.jpg")bottom 0 center /cover no-repeat;
+        }
+        &.resident-02 {
+          background: url("../img/resident/02/resident-link_bg_img_min.jpg")bottom 0 center /cover no-repeat;
+        }
+      }
+    }
+  }
+
+  .resident-Link_Txt_Wrapper {
+    color: #ffffff;
+    display: block;
+    height: 100%;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 44px;
+    text-align: center;
+    width: 100%;
+
+    .title {
+      font-size: 18px;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .position {
+      font-size: 10px;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .body {
+      font-size: 12px;
+    }
+    .arrow {
+      position: absolute;
+      right: 30px;
+      bottom: 20px;
+
+      height: 12px;
+      width: 40px;
+    }
+  }
+}
